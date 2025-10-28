@@ -26,7 +26,7 @@ aptos-moving-average = { path = "moving-average" }
 integration-tests = { path = "integration-tests" }
 sdk-processor = { path = "sdk-processor" }
 
-aptos-protos = { git = "ssh://git@github.com/pontem-network/lumio-node.git", branch = "rename_for_indexer", package = "lumio-protos" }
+aptos-protos = { git = "ssh://git@github.com/pontem-network/lumio-node.git", package = "lumio-protos" }
 
 async-trait = "0.1.53"
 ahash = { version = "0.8.7", features = ["serde"] }
