@@ -260,8 +260,8 @@ async fn parse_v2_token(
                                 V2TokenResource::UnlimitedSupply(unlimited_supply) => {
                                     aggregated_data.unlimited_supply = Some(unlimited_supply);
                                 },
-                                V2TokenResource::AptosCollection(aptos_collection) => {
-                                    aggregated_data.aptos_collection = Some(aptos_collection);
+                                V2TokenResource::LumioCollection(lumio_collection) => {
+                                    aggregated_data.lumio_collection = Some(lumio_collection);
                                 },
                                 V2TokenResource::PropertyMapModel(property_map) => {
                                     aggregated_data.property_map = Some(property_map);

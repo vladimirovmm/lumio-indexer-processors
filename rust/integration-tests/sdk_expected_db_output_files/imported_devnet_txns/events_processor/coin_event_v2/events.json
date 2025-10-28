@@ -9,7 +9,7 @@
     "data": {
       "amount": "1",
       "account": "0xe93dcd3dd5febf8d72bf8d33e1d85a6115300fedfe055c062834d264f103ce4c",
-      "coin_type": "0x1::aptos_coin::AptosCoin"
+      "coin_type": "0x1::lumio_coin::LumioCoin"
     },
     "indexed_type": "0x1::coin::CoinWithdraw",
     "event_index": 0
@@ -24,7 +24,7 @@
     "data": {
       "amount": "1",
       "account": "0x74512d8383e6857a9a587012c44ad98420cbc713301714402611d7f87a7f4fe0",
-      "coin_type": "0x1::aptos_coin::AptosCoin"
+      "coin_type": "0x1::lumio_coin::LumioCoin"
     },
     "indexed_type": "0x1::coin::CoinDeposit",
     "event_index": 1

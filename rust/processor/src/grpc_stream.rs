@@ -27,9 +27,9 @@ use url::Url;
 const GRPC_API_GATEWAY_API_KEY_HEADER: &str = "authorization";
 /// GRPC request metadata key for the request name. This is used to identify the
 /// data destination.
-const GRPC_REQUEST_NAME_HEADER: &str = "x-aptos-request-name";
+const GRPC_REQUEST_NAME_HEADER: &str = "x-lumio-request-name";
 /// GRPC connection id
-const GRPC_CONNECTION_ID: &str = "x-aptos-connection-id";
+const GRPC_CONNECTION_ID: &str = "x-lumio-connection-id";
 /// We will try to reconnect to GRPC 5 times in case upstream connection is being updated
 pub const RECONNECTION_MAX_RETRIES: u64 = 5;
 /// 256MB

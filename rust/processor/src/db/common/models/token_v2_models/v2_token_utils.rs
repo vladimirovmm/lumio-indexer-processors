@@ -93,12 +93,12 @@ impl TryFrom<&WriteResource> for Collection {
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct AptosCollection {
+pub struct LumioCollection {
     pub mutable_description: bool,
     pub mutable_uri: bool,
 }
 
-impl TryFrom<&WriteResource> for AptosCollection {
+impl TryFrom<&WriteResource> for LumioCollection {
     type Error = anyhow::Error;
 
     fn try_from(write_resource: &WriteResource) -> anyhow::Result<Self> {

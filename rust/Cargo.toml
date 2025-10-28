@@ -31,6 +31,7 @@ aptos-protos = { git = "ssh://git@github.com/pontem-network/lumio-node.git", pac
 async-trait = "0.1.53"
 ahash = { version = "0.8.7", features = ["serde"] }
 anyhow = "1.0.86"
+# aptos-indexer-processor-sdk = { git = "https://github.com/vladimirovmm/lumio-indexer-processor-sdk.git", branch = "lumio" }
 aptos-indexer-processor-sdk = { git = "https://github.com/aptos-labs/aptos-indexer-processor-sdk.git", rev = "b79ed8b5864b2a12a1f9c5fd01579462e029b2ae" }
 
 backtrace = "0.3.58"

@@ -4,7 +4,19 @@
 health_check_port: 18084
 server_config:
   processor_config:
-    type: default_processor
+    # type: ans_processor
+    # type: nft_metadata_processor
+
+    # type: account_transactions_processor
+    # type: default_processor
+    # type: events_processor
+    # type: fungible_asset_processor
+    # type: monitoring_processor
+    # type: objects_processor
+    # type: stake_processor
+    # type: token_v2_processor
+    # type: transaction_metadata_processor
+    type: user_transaction_processor
   postgres_connection_string: postgresql://dev_indexer:dev_indexer@localhost:5432/dev_indexer
   indexer_grpc_data_service_address: http://127.0.0.1:50051
   auth_token: "notused"

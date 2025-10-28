@@ -8,7 +8,7 @@
 use crate::{
     db::{
         common::models::token_v2_models::v2_token_utils::{
-            AptosCollection, ConcurrentSupply, FixedSupply, PropertyMapModel, TokenIdentifiers,
+            ConcurrentSupply, FixedSupply, LumioCollection, PropertyMapModel, TokenIdentifiers,
             TokenV2, TransferEvent, UnlimitedSupply,
         },
         postgres::models::{
@@ -49,7 +49,7 @@ pub struct ObjectAggregatedData {
     pub fungible_asset_store: Option<FungibleAssetStore>,
     pub concurrent_fungible_asset_balance: Option<ConcurrentFungibleAssetBalance>,
     // Token v2 structs
-    pub aptos_collection: Option<AptosCollection>,
+    pub lumio_collection: Option<LumioCollection>,
     pub fixed_supply: Option<FixedSupply>,
     pub property_map: Option<PropertyMapModel>,
     pub token: Option<TokenV2>,
@@ -76,7 +76,7 @@ impl Default for ObjectAggregatedData {
             concurrent_fungible_asset_supply: None,
             concurrent_fungible_asset_balance: None,
             fungible_asset_store: None,
-            aptos_collection: None,
+            lumio_collection: None,
             fixed_supply: None,
             property_map: None,
             token: None,

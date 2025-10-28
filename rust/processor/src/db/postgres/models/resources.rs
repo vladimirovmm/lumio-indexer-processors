@@ -5,7 +5,7 @@ use crate::db::{
     common::models::{
         object_models::v2_object_utils::{ObjectCore, Untransferable},
         token_v2_models::v2_token_utils::{
-            AptosCollection, Collection, ConcurrentSupply, FixedSupply, PropertyMapModel,
+            LumioCollection, Collection, ConcurrentSupply, FixedSupply, PropertyMapModel,
             TokenIdentifiers, TokenV2, UnlimitedSupply,
         },
     },
@@ -40,7 +40,7 @@ pub const TYPE_COLLECTION: &str = formatcp!("{TOKEN_V2_ADDR}::collection::Collec
 pub const TYPE_CONCURRENT_SUPPLY: &str = formatcp!("{TOKEN_V2_ADDR}::collection::ConcurrentSupply");
 pub const TYPE_FIXED_SUPPLY: &str = formatcp!("{TOKEN_V2_ADDR}::collection::FixedSupply");
 pub const TYPE_UNLIMITED_SUPPLY: &str = formatcp!("{TOKEN_V2_ADDR}::collection::UnlimitedSupply");
-pub const TYPE_APOTS_COLLECTION: &str = formatcp!("{TOKEN_V2_ADDR}::aptos_token::AptosCollection");
+pub const TYPE_APOTS_COLLECTION: &str = formatcp!("{TOKEN_V2_ADDR}::lumio_token::LumioCollection");
 pub const TYPE_TOKEN_V2: &str = formatcp!("{TOKEN_V2_ADDR}::token::Token");
 pub const TYPE_TOKEN_IDENTIFIERS: &str = formatcp!("{TOKEN_V2_ADDR}::token::TokenIdentifiers");
 pub const TYPE_PROPERTY_MAP: &str = formatcp!("{TOKEN_V2_ADDR}::property_map::PropertyMap");
@@ -124,7 +124,7 @@ impl V2FungibleAssetResource {
 }
 
 pub enum V2TokenResource {
-    AptosCollection(AptosCollection),
+    LumioCollection(LumioCollection),
     Collection(Collection),
     ConcurrentSupply(ConcurrentSupply),
     FixedSupply(FixedSupply),
@@ -136,7 +136,7 @@ pub enum V2TokenResource {
     Untransferable(Untransferable),
 }
 
-impl Resource for AptosCollection {
+impl Resource for LumioCollection {
     fn type_str() -> &'static str {
         TYPE_APOTS_COLLECTION
     }
@@ -200,7 +200,7 @@ impl V2TokenResource {
     pub fn from_write_resource(write_resource: &WriteResource) -> Result<Option<Self>> {
         let type_str = MoveResource::get_outer_type_from_write_resource(write_resource);
         Ok(Some(match type_str.as_str() {
-            TYPE_APOTS_COLLECTION => Self::AptosCollection(write_resource.try_into()?),
+            TYPE_APOTS_COLLECTION => Self::LumioCollection(write_resource.try_into()?),
             TYPE_COLLECTION => Self::Collection(write_resource.try_into()?),
             TYPE_CONCURRENT_SUPPLY => Self::ConcurrentSupply(write_resource.try_into()?),
             TYPE_FIXED_SUPPLY => Self::FixedSupply(write_resource.try_into()?),

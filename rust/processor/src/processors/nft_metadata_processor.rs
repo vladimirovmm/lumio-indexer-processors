@@ -247,7 +247,7 @@ async fn parse_v2_token(
                     token_v2_metadata_helper.insert(
                         standardize_address(&wr.address.to_string()),
                         ObjectAggregatedData {
-                            aptos_collection: None,
+                            lumio_collection: None,
                             fixed_supply: None,
                             object,
                             concurrent_supply: None,

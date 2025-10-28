@@ -29,7 +29,7 @@ pub const MAX_TIMESTAMP_SECS: i64 = 253_402_300_799;
 // Max length of entry function id string to ensure that db doesn't explode
 pub const MAX_ENTRY_FUNCTION_LENGTH: usize = 1000;
 
-pub const APTOS_COIN_TYPE_STR: &str = "0x1::aptos_coin::AptosCoin";
+pub const APTOS_COIN_TYPE_STR: &str = "0x1::lumio_coin::LumioCoin";
 
 lazy_static! {
     pub static ref APT_METADATA_ADDRESS_RAW: [u8; 32] = {
@@ -595,8 +595,8 @@ mod tests {
         };
         let val = serde_json::to_string(&test_struct).unwrap();
         let d: TypeInfoMock = serde_json::from_str(val.as_str()).unwrap();
-        assert_eq!(d.module_name.as_str(), "aptos_coin");
-        assert_eq!(d.struct_name.as_str(), "AptosCoin");
+        assert_eq!(d.module_name.as_str(), "lumio_coin");
+        assert_eq!(d.struct_name.as_str(), "LumioCoin");
     }
 
     #[test]

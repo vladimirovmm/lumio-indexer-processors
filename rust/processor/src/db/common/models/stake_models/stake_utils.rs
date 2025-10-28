@@ -200,7 +200,7 @@ pub enum StakeEvent {
 impl StakeEvent {
     pub fn from_event(data_type: &str, data: &str, txn_version: i64) -> Result<Option<Self>> {
         match data_type {
-            "0x1::aptos_governance::VoteEvent" | "0x1::aptos_governance::Vote" => {
+            "0x1::lumio_governance::VoteEvent" | "0x1::lumio_governance::Vote" => {
                 serde_json::from_str(data).map(|inner| Some(StakeEvent::GovernanceVoteEvent(inner)))
             },
             "0x1::stake::DistributeRewardsEvent" | "0x1::stake::DistributeRewards" => {

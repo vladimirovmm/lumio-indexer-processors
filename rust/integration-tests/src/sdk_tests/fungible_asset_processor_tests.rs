@@ -120,7 +120,7 @@ mod sdk_fungible_asset_processor_tests {
      * - Events
      *      - 0x1::coin::WithdrawEvent
      *      - 0x1::coin::DepositEvents
-     *      - 0x1::aptos_coin::GasFeeEvent
+     *      - 0x1::lumio_coin::GasFeeEvent
      *      - 0x1::fungible_asset::Deposit
      *      - 0x1::fungible_asset::Withdraw
      */
@@ -284,9 +284,10 @@ mod sdk_fungible_asset_processor_tests {
     #[tokio::test(flavor = "multi_thread", worker_threads = 2)]
     async fn test_fungible_asset_processor_asset_type_null() {
         sequential_multi_transaction_helper_function(
-            &[&[IMPORTED_MAINNET_TXNS_2308282694_ASSET_TYPE_V1_NULL], &[
-                IMPORTED_MAINNET_TXNS_2308283617_ASSET_TYPE_V1_NULL_2,
-            ]],
+            &[
+                &[IMPORTED_MAINNET_TXNS_2308282694_ASSET_TYPE_V1_NULL],
+                &[IMPORTED_MAINNET_TXNS_2308283617_ASSET_TYPE_V1_NULL_2],
+            ],
             "asset_type_null",
         )
         .await;

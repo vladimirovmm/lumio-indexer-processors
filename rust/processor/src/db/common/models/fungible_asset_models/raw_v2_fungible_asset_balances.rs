@@ -387,7 +387,7 @@ mod tests {
     #[test]
     fn test_paired_metadata_address() {
         assert_eq!(
-            get_paired_metadata_address("0x1::aptos_coin::AptosCoin"),
+            get_paired_metadata_address("0x1::lumio_coin::LumioCoin"),
             *APT_METADATA_ADDRESS_HEX
         );
         assert_eq!(get_paired_metadata_address("0x66c34778730acbb120cefa57a3d98fd21e0c8b3a51e9baee530088b2e444e94c::moon_coin::MoonCoin"), "0xf772c28c069aa7e4417d85d771957eb3c5c11b5bf90b1965cda23b899ebc0384");

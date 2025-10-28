@@ -34,7 +34,7 @@ pub struct CoinSupply {
 }
 
 impl CoinSupply {
-    /// Currently only supports aptos_coin. Aggregator table detail is in CoinInfo which for aptos coin appears during genesis.
+    /// Currently only supports lumio_coin. Aggregator table detail is in CoinInfo which for aptos coin appears during genesis.
     /// We query for the aggregator table details (handle and key) once upon indexer initiation and use it to fetch supply.
     pub fn from_write_table_item(
         write_table_item: &WriteTableItem,

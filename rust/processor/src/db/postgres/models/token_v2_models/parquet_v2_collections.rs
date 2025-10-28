@@ -129,7 +129,7 @@ impl CollectionV2 {
                     );
                 }
 
-                // Getting collection mutability config from AptosCollection
+                // Getting collection mutability config from LumioCollection
                 let collection = object_data.aptos_collection.as_ref();
                 if let Some(collection) = collection {
                     mutable_description = Some(collection.mutable_description);
