@@ -1,11 +1,11 @@
 # This is a template yaml for the indexer processor. It assumes you have a data service
 # running locally, for example as part of local testnet you ran with this command:
 # aptos node run-local-testnet
-health_check_port: 8084
+health_check_port: 18084
 server_config:
   processor_config:
     type: default_processor
-  postgres_connection_string: postgresql://postgres:@localhost:5432/default_processor
+  postgres_connection_string: postgresql://dev_indexer:dev_indexer@localhost:5432/dev_indexer
   indexer_grpc_data_service_address: http://127.0.0.1:50051
-  auth_token: AUTH_TOKEN
+  auth_token: "notused"
   
