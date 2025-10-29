@@ -41,7 +41,7 @@ use crate::{
 };
 use ahash::{AHashMap, AHashSet};
 use anyhow::Context;
-use aptos_protos::transaction::v1::{transaction::TxnData, write_set_change::Change, Transaction};
+use lumio_protos::transaction::v1::{transaction::TxnData, write_set_change::Change, Transaction};
 use async_trait::async_trait;
 use kanal::AsyncSender;
 use serde::{Deserialize, Serialize};

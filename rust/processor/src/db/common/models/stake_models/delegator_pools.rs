@@ -13,7 +13,7 @@ use crate::{
     utils::{counters::PROCESSOR_UNKNOWN_TYPE_COUNT, util::standardize_address},
 };
 use ahash::AHashMap;
-use aptos_protos::transaction::v1::{
+use lumio_protos::transaction::v1::{
     transaction::TxnData, write_set_change::Change, Transaction, WriteResource, WriteTableItem,
 };
 use bigdecimal::BigDecimal;

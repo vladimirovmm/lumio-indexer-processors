@@ -12,7 +12,7 @@ use crate::{
     utils::util::{hash_str, standardize_address},
 };
 use allocative_derive::Allocative;
-use aptos_protos::transaction::v1::{DeleteTableItem, WriteTableItem};
+use lumio_protos::transaction::v1::{DeleteTableItem, WriteTableItem};
 use field_count::FieldCount;
 use parquet_derive::ParquetRecordWriter;
 use serde::{Deserialize, Serialize};

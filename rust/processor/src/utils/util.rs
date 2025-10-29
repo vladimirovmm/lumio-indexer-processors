@@ -6,7 +6,7 @@ use crate::{
     db::postgres::models::property_map::{PropertyMap, TokenObjectPropertyMap},
     utils::counters::PROCESSOR_UNKNOWN_TYPE_COUNT,
 };
-use aptos_protos::{
+use lumio_protos::{
     transaction::v1::{
         multisig_transaction_payload::Payload as MultisigPayloadType,
         transaction_payload::Payload as PayloadType, write_set::WriteSet as WriteSetType,

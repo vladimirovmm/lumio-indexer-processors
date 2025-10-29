@@ -12,7 +12,7 @@ use crate::db::{
         ans_utils::SetReverseLookupEvent,
     },
 };
-use aptos_protos::transaction::v1::Event;
+use lumio_protos::transaction::v1::Event;
 use serde::{Deserialize, Serialize};
 type RegisteredAddress = String;
 // PK of current_ans_primary_nameTokenStandard

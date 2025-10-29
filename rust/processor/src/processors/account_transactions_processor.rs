@@ -13,7 +13,7 @@ use crate::{
 };
 use ahash::AHashMap;
 use anyhow::bail;
-use aptos_protos::transaction::v1::Transaction;
+use lumio_protos::transaction::v1::Transaction;
 use async_trait::async_trait;
 use diesel::{pg::Pg, query_builder::QueryFragment};
 use rayon::prelude::*;

@@ -62,7 +62,7 @@ use crate::{
 };
 use ahash::{AHashMap, AHashSet};
 use anyhow::bail;
-use aptos_protos::transaction::v1::{transaction::TxnData, write_set_change::Change, Transaction};
+use lumio_protos::transaction::v1::{transaction::TxnData, write_set_change::Change, Transaction};
 use async_trait::async_trait;
 use diesel::{
     pg::{upsert::excluded, Pg},

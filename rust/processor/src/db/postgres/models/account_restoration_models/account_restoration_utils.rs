@@ -8,7 +8,7 @@ use crate::{
     },
     utils::util::sha3_256,
 };
-use aptos_protos::transaction::v1::{
+use lumio_protos::transaction::v1::{
     account_signature::Signature as AccountSignature, signature::Signature, transaction::TxnData,
     Transaction,
 };

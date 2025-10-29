@@ -17,8 +17,8 @@ ahash = { workspace = true }
 allocative = { workspace = true }
 allocative_derive = { workspace = true }
 anyhow = { workspace = true }
-aptos-moving-average = { workspace = true }
-aptos-protos = { workspace = true }
+lumio-moving-average = { workspace = true }
+lumio-protos = { workspace = true }
 async-trait = { workspace = true }
 bcs = { workspace = true }
 bigdecimal = { workspace = true }

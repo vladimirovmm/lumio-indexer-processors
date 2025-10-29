@@ -20,7 +20,7 @@ use crate::{
     utils::util::standardize_address,
 };
 use ahash::AHashMap;
-use aptos_protos::transaction::v1::{DeleteResource, WriteResource};
+use lumio_protos::transaction::v1::{DeleteResource, WriteResource};
 use bigdecimal::BigDecimal;
 use serde::{Deserialize, Serialize};
 // This is the asset type

@@ -28,7 +28,7 @@ pub struct ParquetFileGapDetectorInner {
 pub struct ParquetFileGapDetectorResult {
     pub last_success_version: u64,
     pub num_gaps: u64,
-    pub last_transaction_timestamp: Option<aptos_protos::util::timestamp::Timestamp>,
+    pub last_transaction_timestamp: Option<lumio_protos::util::timestamp::Timestamp>,
 }
 
 impl ParquetFileGapDetectorInner {

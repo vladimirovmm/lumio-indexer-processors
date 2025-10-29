@@ -6,7 +6,7 @@
 #![allow(clippy::unused_unit)]
 
 use crate::db::postgres::models::token_models::token_utils::TokenWriteSet;
-use aptos_protos::transaction::v1::WriteTableItem;
+use lumio_protos::transaction::v1::WriteTableItem;
 use bigdecimal::BigDecimal;
 use serde::{Deserialize, Serialize};
 

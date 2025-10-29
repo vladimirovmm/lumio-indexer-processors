@@ -60,7 +60,7 @@ use crate::{
         util::parse_timestamp,
     },
 };
-use aptos_protos::transaction::v1::Transaction as ProtoTransaction;
+use lumio_protos::transaction::v1::Transaction as ProtoTransaction;
 use async_trait::async_trait;
 use diesel::{pg::upsert::excluded, ExpressionMethods};
 use enum_dispatch::enum_dispatch;
@@ -71,7 +71,7 @@ use std::fmt::Debug;
 pub struct DefaultProcessingResult {
     pub start_version: u64,
     pub end_version: u64,
-    pub last_transaction_timestamp: Option<aptos_protos::util::timestamp::Timestamp>,
+    pub last_transaction_timestamp: Option<lumio_protos::util::timestamp::Timestamp>,
     pub processing_duration_in_secs: f64,
     pub db_insertion_duration_in_secs: f64,
 }
@@ -134,7 +134,7 @@ pub trait ProcessorTrait: Send + Sync + Debug {
     async fn update_last_processed_version(
         &self,
         version: u64,
-        last_transaction_timestamp: Option<aptos_protos::util::timestamp::Timestamp>,
+        last_transaction_timestamp: Option<lumio_protos::util::timestamp::Timestamp>,
     ) -> anyhow::Result<()> {
         let timestamp = last_transaction_timestamp.map(|t| parse_timestamp(&t, version as i64));
         let status = ProcessorStatus {

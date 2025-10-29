@@ -3,7 +3,7 @@
 
 use super::{DefaultProcessingResult, ProcessorName, ProcessorTrait};
 use crate::{gap_detectors::ProcessingResult, utils::database::ArcDbPool};
-use aptos_protos::transaction::v1::Transaction;
+use lumio_protos::transaction::v1::Transaction;
 use async_trait::async_trait;
 use std::fmt::Debug;
 

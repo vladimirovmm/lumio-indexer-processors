@@ -12,7 +12,7 @@ use crate::{
 };
 use allocative_derive::Allocative;
 use anyhow::Context;
-use aptos_protos::transaction::v1::WriteTableItem;
+use lumio_protos::transaction::v1::WriteTableItem;
 use bigdecimal::BigDecimal;
 use field_count::FieldCount;
 use parquet_derive::ParquetRecordWriter;

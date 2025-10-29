@@ -16,7 +16,7 @@ use crate::{
     },
 };
 use allocative_derive::Allocative;
-use aptos_protos::transaction::v1::Event;
+use lumio_protos::transaction::v1::Event;
 use field_count::FieldCount;
 use parquet_derive::ParquetRecordWriter;
 use serde::{Deserialize, Serialize};

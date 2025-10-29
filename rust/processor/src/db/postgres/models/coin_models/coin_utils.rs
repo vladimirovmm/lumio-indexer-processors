@@ -9,7 +9,7 @@ use crate::{
     utils::util::{deserialize_from_string, hash_str, standardize_address, truncate_str},
 };
 use anyhow::{bail, Context, Result};
-use aptos_protos::transaction::v1::{move_type::Content, DeleteResource, MoveType, WriteResource};
+use lumio_protos::transaction::v1::{move_type::Content, DeleteResource, MoveType, WriteResource};
 use bigdecimal::BigDecimal;
 use once_cell::sync::Lazy;
 use regex::Regex;

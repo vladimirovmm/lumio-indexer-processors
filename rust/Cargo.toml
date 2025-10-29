@@ -4,7 +4,7 @@ resolver = "2"
 members = [
     # "indexer-metrics",
     # "integration-tests",
-    # "moving-average",
+    "moving-average",
     "processor",
     # "sdk-processor",
     # "server-framework",
@@ -22,11 +22,11 @@ rust-version = "1.78"
 [workspace.dependencies]
 processor = { path = "processor" }
 server-framework = { path = "server-framework" }
-aptos-moving-average = { path = "moving-average" }
+lumio-moving-average = { path = "moving-average" }
 integration-tests = { path = "integration-tests" }
 sdk-processor = { path = "sdk-processor" }
 
-aptos-protos = { git = "ssh://git@github.com/pontem-network/lumio-node.git", package = "lumio-protos" }
+lumio-protos = { git = "ssh://git@github.com/pontem-network/lumio-node.git" }
 
 async-trait = "0.1.53"
 ahash = { version = "0.8.7", features = ["serde"] }

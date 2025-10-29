@@ -9,7 +9,7 @@ use crate::{
 };
 use allocative_derive::Allocative;
 use anyhow::{Context, Result};
-use aptos_protos::transaction::v1::{
+use lumio_protos::transaction::v1::{
     DeleteResource, MoveStructTag as MoveStructTagPB, WriteResource,
 };
 use field_count::FieldCount;

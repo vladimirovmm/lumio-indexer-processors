@@ -5,7 +5,7 @@
 
 use crate::utils::{counters::PROCESSOR_UNKNOWN_TYPE_COUNT, util::standardize_address};
 use anyhow::{Context, Result};
-use aptos_protos::transaction::v1::{
+use lumio_protos::transaction::v1::{
     account_signature::Signature as AccountSignatureEnum,
     any_signature::{SignatureVariant, Type as AnySignatureTypeEnumPb},
     signature::Signature as SignatureEnum,

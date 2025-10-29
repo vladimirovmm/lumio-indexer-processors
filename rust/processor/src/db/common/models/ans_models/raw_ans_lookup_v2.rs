@@ -16,7 +16,7 @@ use crate::{
     utils::util::standardize_address,
 };
 use ahash::AHashMap;
-use aptos_protos::transaction::v1::WriteResource;
+use lumio_protos::transaction::v1::WriteResource;
 use serde::{Deserialize, Serialize};
 
 type Domain = String;

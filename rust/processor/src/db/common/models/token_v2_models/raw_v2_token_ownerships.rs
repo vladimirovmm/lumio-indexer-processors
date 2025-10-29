@@ -27,7 +27,7 @@ use crate::{
 };
 use ahash::AHashMap;
 use anyhow::Context;
-use aptos_protos::transaction::v1::{
+use lumio_protos::transaction::v1::{
     DeleteResource, DeleteTableItem, WriteResource, WriteTableItem,
 };
 use bigdecimal::{BigDecimal, One, Zero};

@@ -23,7 +23,7 @@ use crate::{
 };
 use allocative_derive::Allocative;
 use anyhow::Context;
-use aptos_protos::transaction::v1::{WriteResource, WriteTableItem};
+use lumio_protos::transaction::v1::{WriteResource, WriteTableItem};
 use bigdecimal::{BigDecimal, Zero};
 use diesel::{sql_query, sql_types::Text};
 use diesel_async::RunQueryDsl;

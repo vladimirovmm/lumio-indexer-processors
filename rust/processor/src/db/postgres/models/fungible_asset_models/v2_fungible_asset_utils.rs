@@ -12,7 +12,7 @@ use crate::{
     utils::util::{deserialize_from_string, truncate_str, Aggregator},
 };
 use anyhow::{Context, Result};
-use aptos_protos::transaction::v1::WriteResource;
+use lumio_protos::transaction::v1::WriteResource;
 use bigdecimal::BigDecimal;
 use field_count::FieldCount;
 use serde::{Deserialize, Serialize};

@@ -5,7 +5,7 @@
 
 use crate::bq_analytics::generic_parquet_processor::{GetTimeStamp, HasVersion, NamedTable};
 use allocative_derive::Allocative;
-use aptos_protos::transaction::v1::WriteOpSizeInfo;
+use lumio_protos::transaction::v1::WriteOpSizeInfo;
 use field_count::FieldCount;
 use parquet_derive::ParquetRecordWriter;
 use serde::{Deserialize, Serialize};

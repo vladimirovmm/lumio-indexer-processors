@@ -1,4 +1,4 @@
-use aptos_protos::transaction::v1::WriteTableItem;
+use lumio_protos::transaction::v1::WriteTableItem;
 use serde::{Deserialize, Serialize};
 
 #[derive(Clone, Debug, Deserialize, Serialize)]

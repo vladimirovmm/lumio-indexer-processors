@@ -4,7 +4,7 @@
 #![allow(clippy::extra_unused_lifetimes)]
 
 use crate::schema::event_size_info;
-use aptos_protos::transaction::v1::EventSizeInfo;
+use lumio_protos::transaction::v1::EventSizeInfo;
 use field_count::FieldCount;
 use serde::{Deserialize, Serialize};
 

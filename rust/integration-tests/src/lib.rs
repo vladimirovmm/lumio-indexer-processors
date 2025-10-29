@@ -1,6 +1,6 @@
 use anyhow::Context;
-use aptos_protos::transaction::v1::Transaction;
 use diesel::{pg::PgConnection, sql_query, Connection, RunQueryDsl};
+use lumio_protos::transaction::v1::Transaction;
 use processor::{
     processors::{ProcessorConfig, ProcessorTrait},
     utils::database::{new_db_pool, run_pending_migrations},

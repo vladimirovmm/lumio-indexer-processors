@@ -6,16 +6,16 @@ use crate::utils::{
     },
     util::{timestamp_to_iso, timestamp_to_unixtime},
 };
-use aptos_moving_average::MovingAverage;
-use aptos_protos::{
-    indexer::v1::{raw_data_client::RawDataClient, GetTransactionsRequest, TransactionsResponse},
-    transaction::v1::Transaction,
-    util::timestamp::Timestamp,
-};
 use bigdecimal::Zero;
 use futures_util::StreamExt;
 use itertools::Itertools;
 use kanal::AsyncSender;
+use lumio_moving_average::MovingAverage;
+use lumio_protos::{
+    indexer::v1::{raw_data_client::RawDataClient, GetTransactionsRequest, TransactionsResponse},
+    transaction::v1::Transaction,
+    util::timestamp::Timestamp,
+};
 use prost::Message;
 use std::time::Duration;
 use tokio::time::timeout;

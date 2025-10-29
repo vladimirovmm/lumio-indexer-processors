@@ -18,7 +18,7 @@ use crate::{
     },
     utils::util::standardize_address,
 };
-use aptos_protos::transaction::v1::Event;
+use lumio_protos::transaction::v1::Event;
 use bigdecimal::{BigDecimal, One, Zero};
 use serde::{Deserialize, Serialize};
 

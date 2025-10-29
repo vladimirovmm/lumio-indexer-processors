@@ -24,7 +24,7 @@ use crate::{
     utils::{database::DbPoolConnection, util::standardize_address},
 };
 use anyhow::Context;
-use aptos_protos::transaction::v1::{WriteResource, WriteTableItem};
+use lumio_protos::transaction::v1::{WriteResource, WriteTableItem};
 use bigdecimal::{BigDecimal, Zero};
 use diesel::{prelude::*, sql_query, sql_types::Text};
 use diesel_async::RunQueryDsl;

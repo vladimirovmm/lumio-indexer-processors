@@ -5,7 +5,7 @@ use crate::{
     },
     utils::util::{hash_str, standardize_address},
 };
-use aptos_protos::transaction::v1::{DeleteTableItem, WriteTableItem};
+use lumio_protos::transaction::v1::{DeleteTableItem, WriteTableItem};
 
 /// RawTableItem is a struct that will be used to converted into Postgres or Parquet TableItem
 pub struct RawTableItem {

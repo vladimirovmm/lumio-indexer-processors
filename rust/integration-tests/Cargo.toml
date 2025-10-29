@@ -16,9 +16,9 @@ rust-version = { workspace = true }
 ahash = { workspace = true }
 anyhow = { workspace = true }
 aptos-indexer-processor-sdk = { workspace = true }
-aptos-indexer-test-transactions  = { workspace = true }
+aptos-indexer-test-transactions = { workspace = true }
 aptos-indexer-testing-framework = { workspace = true }
-aptos-protos = { workspace = true }
+lumio-protos = { workspace = true }
 assert-json-diff = { workspace = true }
 bigdecimal = { workspace = true }
 chrono = { workspace = true }

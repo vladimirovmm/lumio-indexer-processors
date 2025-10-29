@@ -14,7 +14,7 @@ use crate::{
 };
 use allocative_derive::Allocative;
 use anyhow::Context;
-use aptos_protos::transaction::v1::{
+use lumio_protos::transaction::v1::{
     write_set_change::{Change as WriteSetChangeEnum, Type as WriteSetChangeTypeEnum},
     WriteSetChange as WriteSetChangePB,
 };

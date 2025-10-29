@@ -20,7 +20,7 @@ use crate::{
 };
 use ahash::AHashMap;
 use anyhow::Context;
-use aptos_protos::transaction::v1::{
+use lumio_protos::transaction::v1::{
     write_set_change::Change, DeleteTableItem, Transaction, WriteResource, WriteTableItem,
 };
 use bigdecimal::{BigDecimal, Zero};

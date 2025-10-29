@@ -9,7 +9,7 @@ use crate::{
     utils::util::{parse_timestamp, standardize_address},
 };
 use ahash::AHashMap;
-use aptos_protos::transaction::v1::{write_set_change::Change, Transaction};
+use lumio_protos::transaction::v1::{write_set_change::Change, Transaction};
 type StakingPoolAddress = String;
 pub type StakingPoolRawVoterMap = AHashMap<StakingPoolAddress, RawCurrentStakingPoolVoter>;
 

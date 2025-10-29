@@ -15,7 +15,7 @@ use crate::{
 };
 use ahash::AHashMap;
 use allocative_derive::Allocative;
-use aptos_protos::transaction::v1::{
+use lumio_protos::transaction::v1::{
     transaction::{TransactionType, TxnData},
     Transaction as TransactionPB, TransactionInfo, TransactionSizeInfo,
 };

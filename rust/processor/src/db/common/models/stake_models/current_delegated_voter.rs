@@ -13,7 +13,7 @@ use crate::{
     utils::{database::DbPoolConnection, util::standardize_address},
 };
 use ahash::AHashMap;
-use aptos_protos::transaction::v1::WriteTableItem;
+use lumio_protos::transaction::v1::WriteTableItem;
 use diesel::prelude::*;
 use diesel_async::RunQueryDsl;
 use field_count::FieldCount;

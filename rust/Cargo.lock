@@ -140,13 +140,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "34ac096ce696dc2fcabef30516bb13c0a68a11d30131d3df6f04711467681b04"
 
 [[package]]
-name = "aptos-moving-average"
-version = "0.1.0"
-dependencies = [
- "chrono",
-]
-
-[[package]]
 name = "aptos-profiler"
 version = "0.1.0"
 source = "git+https://github.com/aptos-labs/aptos-core.git?rev=202bdccff2b2d333a385ae86a4fcf23e89da9f62#202bdccff2b2d333a385ae86a4fcf23e89da9f62"
@@ -1967,6 +1960,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "04cbf5b083de1c7e0222a7a51dbfdba1cbe1c6ab0b15e29fff3f6c077fd9cd9f"
 
 [[package]]
+name = "lumio-moving-average"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+]
+
+[[package]]
 name = "lumio-protos"
 version = "1.3.1"
 source = "git+ssh://git@github.com/pontem-network/lumio-node.git#a6d8c9d9e2d64f1025cef0d17dfbd5e2c1973781"
@@ -2609,7 +2609,6 @@ dependencies = [
  "allocative",
  "allocative_derive",
  "anyhow",
- "aptos-moving-average",
  "async-trait",
  "bcs",
  "bigdecimal",
@@ -2635,6 +2634,7 @@ dependencies = [
  "jemallocator",
  "kanal",
  "lazy_static",
+ "lumio-moving-average",
  "lumio-protos",
  "native-tls",
  "num_cpus",

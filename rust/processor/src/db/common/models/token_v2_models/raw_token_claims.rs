@@ -13,7 +13,7 @@ use crate::{
     utils::util::standardize_address,
 };
 use ahash::AHashMap;
-use aptos_protos::transaction::v1::{DeleteTableItem, WriteTableItem};
+use lumio_protos::transaction::v1::{DeleteTableItem, WriteTableItem};
 use bigdecimal::{BigDecimal, Zero};
 use serde::{Deserialize, Serialize};
 

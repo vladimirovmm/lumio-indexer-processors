@@ -17,7 +17,7 @@ use crate::{
     utils::util::{standardize_address, truncate_str},
 };
 use anyhow::Context;
-use aptos_protos::transaction::v1::WriteResource;
+use lumio_protos::transaction::v1::WriteResource;
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 

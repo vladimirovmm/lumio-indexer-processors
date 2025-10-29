@@ -8,7 +8,7 @@ use crate::{
     utils::util::standardize_address,
 };
 use allocative_derive::Allocative;
-use aptos_protos::transaction::v1::{
+use lumio_protos::transaction::v1::{
     DeleteModule, MoveModule as MoveModulePB, MoveModuleBytecode, WriteModule,
 };
 use field_count::FieldCount;

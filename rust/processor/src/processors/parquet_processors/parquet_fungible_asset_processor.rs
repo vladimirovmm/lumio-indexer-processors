@@ -27,7 +27,7 @@ use crate::{
 };
 use ahash::AHashMap;
 use anyhow::anyhow;
-use aptos_protos::transaction::v1::{write_set_change::Change, Transaction};
+use lumio_protos::transaction::v1::{write_set_change::Change, Transaction};
 use async_trait::async_trait;
 use chrono::NaiveDateTime;
 use kanal::AsyncSender;

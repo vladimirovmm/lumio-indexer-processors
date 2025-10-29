@@ -17,7 +17,7 @@ use crate::{
     },
     utils::util::standardize_address,
 };
-use aptos_protos::transaction::v1::{DeleteResource, WriteResource, WriteTableItem};
+use lumio_protos::transaction::v1::{DeleteResource, WriteResource, WriteTableItem};
 use bigdecimal::BigDecimal;
 use serde::{Deserialize, Serialize};
 

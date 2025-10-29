@@ -17,7 +17,7 @@ use crate::{
         u64_to_bigdecimal,
     },
 };
-use aptos_protos::{
+use lumio_protos::{
     transaction::v1::{UserTransaction as UserTransactionPB, UserTransactionRequest},
     util::timestamp::Timestamp,
 };

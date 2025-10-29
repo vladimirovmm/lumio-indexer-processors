@@ -55,8 +55,8 @@ use crate::{
 };
 use ahash::AHashMap;
 use anyhow::{Context, Result};
-use aptos_moving_average::MovingAverage;
 use kanal::AsyncSender;
+use lumio_moving_average::MovingAverage;
 use std::{
     collections::HashSet,
     sync::{Arc, Mutex},

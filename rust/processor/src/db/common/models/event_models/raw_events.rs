@@ -2,7 +2,7 @@ use crate::utils::{
     counters::PROCESSOR_UNKNOWN_TYPE_COUNT,
     util::{parse_timestamp, standardize_address, truncate_str},
 };
-use aptos_protos::transaction::v1::{
+use lumio_protos::transaction::v1::{
     transaction::TxnData, Event as EventPB, EventSizeInfo, Transaction,
 };
 use serde::{Deserialize, Serialize};

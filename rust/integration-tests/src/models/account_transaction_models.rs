@@ -6,7 +6,7 @@
 #![allow(clippy::unused_unit)]
 
 use ahash::AHashSet;
-use aptos_protos::transaction::v1::{transaction::TxnData, write_set_change::Change, Transaction};
+use lumio_protos::transaction::v1::{transaction::TxnData, write_set_change::Change, Transaction};
 use diesel::{Identifiable, Insertable, Queryable};
 use field_count::FieldCount;
 use processor::{

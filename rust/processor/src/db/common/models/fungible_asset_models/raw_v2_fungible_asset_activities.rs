@@ -26,7 +26,7 @@ use crate::{
 };
 use ahash::AHashMap;
 use anyhow::Context;
-use aptos_protos::transaction::v1::{Event, TransactionInfo, UserTransactionRequest};
+use lumio_protos::transaction::v1::{Event, TransactionInfo, UserTransactionRequest};
 use bigdecimal::{BigDecimal, Zero};
 use serde::{Deserialize, Serialize};
 pub const GAS_FEE_EVENT: &str = "0x1::lumio_coin::GasFeeEvent";

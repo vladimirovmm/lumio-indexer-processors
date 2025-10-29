@@ -16,7 +16,7 @@ use crate::{
 };
 use ahash::{AHashMap, AHashSet};
 use anyhow::{Context, Result};
-use aptos_protos::transaction::v1::{Event, WriteResource};
+use lumio_protos::transaction::v1::{Event, WriteResource};
 use bigdecimal::BigDecimal;
 use serde::{Deserialize, Serialize};
 use std::{

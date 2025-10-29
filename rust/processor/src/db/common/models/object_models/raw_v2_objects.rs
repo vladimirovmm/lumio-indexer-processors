@@ -15,7 +15,7 @@ use crate::{
     },
 };
 use ahash::AHashMap;
-use aptos_protos::transaction::v1::{DeleteResource, WriteResource};
+use lumio_protos::transaction::v1::{DeleteResource, WriteResource};
 use bigdecimal::BigDecimal;
 use diesel::prelude::*;
 use diesel_async::RunQueryDsl;

@@ -4,7 +4,7 @@
 #![allow(clippy::extra_unused_lifetimes)]
 
 use crate::schema::write_set_size_info;
-use aptos_protos::transaction::v1::WriteOpSizeInfo;
+use lumio_protos::transaction::v1::WriteOpSizeInfo;
 use field_count::FieldCount;
 use serde::{Deserialize, Serialize};
 

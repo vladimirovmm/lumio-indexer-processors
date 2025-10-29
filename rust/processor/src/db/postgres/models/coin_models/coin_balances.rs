@@ -12,7 +12,7 @@ use crate::{
     utils::util::standardize_address,
 };
 use ahash::AHashMap;
-use aptos_protos::transaction::v1::WriteResource;
+use lumio_protos::transaction::v1::WriteResource;
 use bigdecimal::BigDecimal;
 use field_count::FieldCount;
 use serde::{Deserialize, Serialize};

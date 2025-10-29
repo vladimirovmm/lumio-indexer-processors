@@ -69,7 +69,7 @@ mod tests {
         IMPORTED_TESTNET_TXNS_5992795934_FA_ACTIVITIES,
     };
     use aptos_indexer_testing_framework::{cli_parser::get_test_config, database::TestDatabase};
-    use aptos_protos::transaction::v1::Transaction;
+    use lumio_protos::transaction::v1::Transaction;
     use sdk_processor::processors::events_processor::EventsProcessor;
 
     #[tokio::test(flavor = "multi_thread", worker_threads = 2)]

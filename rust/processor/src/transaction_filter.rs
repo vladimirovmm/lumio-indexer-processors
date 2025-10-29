@@ -1,4 +1,4 @@
-use aptos_protos::transaction::v1::{
+use lumio_protos::transaction::v1::{
     transaction::{TransactionType, TxnData},
     transaction_payload::Payload,
     Transaction,

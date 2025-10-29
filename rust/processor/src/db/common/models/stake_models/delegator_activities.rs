@@ -10,7 +10,7 @@ use crate::{
         util::{parse_timestamp, standardize_address, u64_to_bigdecimal},
     },
 };
-use aptos_protos::transaction::v1::{transaction::TxnData, Transaction};
+use lumio_protos::transaction::v1::{transaction::TxnData, Transaction};
 use bigdecimal::BigDecimal;
 use serde::{Deserialize, Serialize};
 
