@@ -77,7 +77,7 @@ Copy the contents below and save it to a file called `config.yaml`. Save it in t
     - proto
     - python
         - lumio_ambassador_token
-        - lumio-tontine
+        - aptos-tontine
         - coin_flip
             - move
                 - sources
