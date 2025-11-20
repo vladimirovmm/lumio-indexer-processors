@@ -15,9 +15,9 @@ rust-version = { workspace = true }
 [dependencies]
 ahash = { workspace = true }
 anyhow = { workspace = true }
-aptos-indexer-processor-sdk = { workspace = true }
-aptos-indexer-test-transactions = { workspace = true }
-aptos-indexer-testing-framework = { workspace = true }
+lumio-indexer-processor-sdk = { workspace = true }
+lumio-indexer-test-transactions = { workspace = true }
+lumio-indexer-testing-framework = { workspace = true }
 lumio-protos = { workspace = true }
 assert-json-diff = { workspace = true }
 bigdecimal = { workspace = true }
@@ -33,7 +33,7 @@ tokio = { workspace = true }
 
 [dev-dependencies]
 ahash = { workspace = true }
-aptos-indexer-processor-sdk = { workspace = true }
+lumio-indexer-processor-sdk = { workspace = true }
 futures = { workspace = true }
 sdk-processor = { workspace = true }
 tempfile = { workspace = true }

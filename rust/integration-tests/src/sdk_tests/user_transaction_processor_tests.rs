@@ -1,5 +1,5 @@
 use ahash::AHashMap;
-use aptos_indexer_testing_framework::sdk_test_context::SdkTestContext;
+use lumio_indexer_testing_framework::sdk_test_context::SdkTestContext;
 use sdk_processor::config::{
     db_config::{DbConfig, PostgresConfig},
     indexer_processor_config::{IndexerProcessorConfig, ProcessorMode, TestingConfig},
@@ -56,7 +56,7 @@ mod sdk_user_txn_processor_tests {
             run_processor_test, setup_test_environment, validate_json, DEFAULT_OUTPUT_FOLDER,
         },
     };
-    use aptos_indexer_test_transactions::json_transactions::generated_transactions::{
+    use lumio_indexer_test_transactions::json_transactions::generated_transactions::{
         IMPORTED_MAINNET_TXNS_103958588_MULTI_AGENTS,
         IMPORTED_MAINNET_TXNS_1803170308_USER_TXN_MULTI_KEY_KEYLESS,
         IMPORTED_MAINNET_TXNS_2175935_USER_TXN_MULTI_ED25519,
@@ -70,7 +70,7 @@ mod sdk_user_txn_processor_tests {
         IMPORTED_TESTNET_TXNS_6616059810_ACCOUNT_ABSTRACTION_AUTHENTICATOR,
         IMPORTED_TESTNET_TXNS_769222973_MULTISIG,
     };
-    use aptos_indexer_testing_framework::{cli_parser::get_test_config, database::TestDatabase};
+    use lumio_indexer_testing_framework::{cli_parser::get_test_config, database::TestDatabase};
     use sdk_processor::processors::user_transaction_processor::UserTransactionProcessor;
 
     #[tokio::test(flavor = "multi_thread", worker_threads = 2)]

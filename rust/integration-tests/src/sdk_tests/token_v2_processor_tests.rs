@@ -1,5 +1,5 @@
 use ahash::AHashMap;
-use aptos_indexer_testing_framework::sdk_test_context::SdkTestContext;
+use lumio_indexer_testing_framework::sdk_test_context::SdkTestContext;
 use sdk_processor::{
     config::{
         db_config::{DbConfig, PostgresConfig},
@@ -65,7 +65,7 @@ mod sdk_token_v2_processor_tests {
             run_processor_test, setup_test_environment, validate_json, DEFAULT_OUTPUT_FOLDER,
         },
     };
-    use aptos_indexer_test_transactions::json_transactions::generated_transactions::{
+    use lumio_indexer_test_transactions::json_transactions::generated_transactions::{
         IMPORTED_DEVNET_TXNS_19922017_TOKEN_V1_OFFER_CLAIM,
         IMPORTED_DEVNET_TXNS_78753831_TOKEN_V1_MINT_TRANSFER_WITH_V2_EVENTS,
         IMPORTED_DEVNET_TXNS_78753832_TOKEN_V2_MINT_TRANSFER_WITH_V2_EVENTS,
@@ -84,7 +84,7 @@ mod sdk_token_v2_processor_tests {
         IMPORTED_MAINNET_TXNS_97963136_TOKEN_V2_CANCEL_OFFER,
         IMPORTED_MAINNET_TXNS_999930475_TOKEN_V2_CONCURRENT_MINT,
     };
-    use aptos_indexer_testing_framework::{cli_parser::get_test_config, database::TestDatabase};
+    use lumio_indexer_testing_framework::{cli_parser::get_test_config, database::TestDatabase};
     use sdk_processor::processors::token_v2_processor::TokenV2Processor;
 
     /**

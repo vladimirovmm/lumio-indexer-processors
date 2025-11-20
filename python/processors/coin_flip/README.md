@@ -8,10 +8,10 @@ The smart contract is already deployed, and you mostly don't need to understand 
 
 We've provided the example code for the modules involved. This tutorial assumes you've set up your environment and already have the following:
 
-- An API key for the GRPC backend. If you do not have one, you should use your API gateway to obtain one [here](https://github.com/aptos-labs/aptos-indexer-processors)
+- An API key for the GRPC backend. If you do not have one, you should use your API gateway to obtain one [here](https://github.com/aptos-labs/lumio-indexer-processors)
 - The [Aptos CLI](https://aptos.dev/tools/aptos-cli/)
 - [Python](https://www.python.org/downloads/) and [Poetry](https://python-poetry.org/docs/#installing-with-the-official-installer)
-- This cloned repository on your local machine `https://github.com/aptos-labs/aptos-indexer-processors`
+- This cloned repository on your local machine `https://github.com/aptos-labs/lumio-indexer-processors`
 
 We use postgresql as our database in this tutorial. You're free to use whatever you want, but this tutorial is geared towards postgresql for the sake of simplicity. We use the following database configuration and tools:
 - [Postgresql](https://www.postgresql.org/download/)
@@ -46,9 +46,9 @@ If your database is set up correctly, and you have the `psql` tool, you should b
 
 ### Setup your local environment with poetry and grpc
 
-If you haven't yet, make sure to read the main indexer [README guide](https://github.com/aptos-labs/aptos-indexer-processors).
+If you haven't yet, make sure to read the main indexer [README guide](https://github.com/aptos-labs/lumio-indexer-processors).
 
-You can also check out the python-specific broad overview of how to create an indexer processor [here](https://github.com/aptos-labs/aptos-indexer-processors/tree/main/python).
+You can also check out the python-specific broad overview of how to create an indexer processor [here](https://github.com/aptos-labs/lumio-indexer-processors/tree/main/python).
 
 At the very least, make sure to install these tools and setup your poetry environment:
 
@@ -76,8 +76,8 @@ Copy the contents below and save it to a file called `config.yaml`. Save it in t
 - indexer
     - proto
     - python
-        - aptos_ambassador_token
-        - aptos-tontine
+        - lumio_ambassador_token
+        - lumio-tontine
         - coin_flip
             - move
                 - sources
@@ -181,7 +181,7 @@ In our Move contract (in `coin_flip/move/sources/coin_flip.move`), each user has
 
 ```rust
 // CoinFlipStats object/resource definition
-#[resource_group_member(group = aptos_framework::object::ObjectGroup)]
+#[resource_group_member(group = lumio_framework::object::ObjectGroup)]
 struct CoinFlipStats has key {
     wins: u64,
     losses: u64,

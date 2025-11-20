@@ -11,15 +11,15 @@
 
 ### Basic Tutorial
 
-In this tutorial, we will be going over how to create and run the Example Event Processor. All source code is in `aptos-indexer-processors/python/processors/example_event_processor`.
+In this tutorial, we will be going over how to create and run the Example Event Processor. All source code is in `lumio-indexer-processors/python/processors/example_event_processor`.
 
 1. Download the example:
 
 ```
 # Clone the repository to get the example code:
-$ git clone https://github.com/aptos-labs/aptos-indexer-processors
+$ git clone https://github.com/aptos-labs/lumio-indexer-processors
 # Navigate to the python folder
-$ cd aptos-indexer-processors/python
+$ cd lumio-indexer-processors/python
 ```
 
 2. Install all dependencies

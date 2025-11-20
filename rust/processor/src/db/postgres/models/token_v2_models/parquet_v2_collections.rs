@@ -23,11 +23,11 @@ use crate::{
 };
 use allocative_derive::Allocative;
 use anyhow::Context;
-use lumio_protos::transaction::v1::{WriteResource, WriteTableItem};
 use bigdecimal::{BigDecimal, Zero};
 use diesel::{sql_query, sql_types::Text};
 use diesel_async::RunQueryDsl;
 use field_count::FieldCount;
+use lumio_protos::transaction::v1::{WriteResource, WriteTableItem};
 use parquet_derive::ParquetRecordWriter;
 use serde::{Deserialize, Serialize};
 
@@ -130,7 +130,7 @@ impl CollectionV2 {
                 }
 
                 // Getting collection mutability config from LumioCollection
-                let collection = object_data.aptos_collection.as_ref();
+                let collection = object_data.lumio_collection.as_ref();
                 if let Some(collection) = collection {
                     mutable_description = Some(collection.mutable_description);
                     mutable_uri = Some(collection.mutable_uri);

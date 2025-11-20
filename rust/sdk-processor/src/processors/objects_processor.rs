@@ -18,12 +18,12 @@ use crate::{
     },
 };
 use anyhow::Result;
-use aptos_indexer_processor_sdk::{
-    aptos_indexer_transaction_stream::{TransactionStream, TransactionStreamConfig},
+use lumio_indexer_processor_sdk::{
     builder::ProcessorBuilder,
     common_steps::{
         TransactionStreamStep, VersionTrackerStep, DEFAULT_UPDATE_PROCESSOR_STATUS_SECS,
     },
+    lumio_indexer_transaction_stream::{TransactionStream, TransactionStreamConfig},
     traits::{processor_trait::ProcessorTrait, IntoRunnableStep},
 };
 use processor::utils::table_flags::TableFlags;

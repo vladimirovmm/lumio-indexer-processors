@@ -39,7 +39,7 @@ If you want to index a custom contract, we recommend using the [Quickstart Guide
 - `processor_config`
     - `type`: which processor to run
     - `channel_size`: size of channel in between steps
-    - Individual processors may have different configuration required. See the full list of configs [here](https://github.com/aptos-labs/aptos-indexer-processors/blob/main/rust/sdk-processor/src/config/processor_config.rs#L89).
+    - Individual processors may have different configuration required. See the full list of configs [here](https://github.com/aptos-labs/lumio-indexer-processors/blob/main/rust/sdk-processor/src/config/processor_config.rs#L89).
 
 - `backfill_config` (optional)
     - `backfill_id`: appended to `processor_type` for a unique backfill identifier
@@ -90,4 +90,4 @@ If you want to index a custom contract, we recommend using the [Quickstart Guide
 ## Processor Specific Notes
 
 ### Supported Coin Type Mappings
-See mapping in [v2_fungible_asset_balances.rs](https://github.com/aptos-labs/aptos-indexer-processors/blob/main/rust/processor/src/db/common/models/fungible_asset_models/v2_fungible_asset_balances.rs#L40) for a list supported coin type mappings.
+See mapping in [v2_fungible_asset_balances.rs](https://github.com/aptos-labs/lumio-indexer-processors/blob/main/rust/processor/src/db/common/models/fungible_asset_models/v2_fungible_asset_balances.rs#L40) for a list supported coin type mappings.

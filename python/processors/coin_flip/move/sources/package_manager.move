@@ -1,9 +1,9 @@
 module coin_flip::package_manager {
-    use aptos_framework::account::{Self, SignerCapability};
-    use aptos_framework::resource_account;
-    use aptos_std::smart_table::{Self, SmartTable};
+    use lumio_framework::account::{Self, SignerCapability};
+    use lumio_framework::resource_account;
+    use lumio_std::smart_table::{Self, SmartTable};
     use std::string::String;
-    use aptos_std::code;
+    use lumio_std::code;
     use std::error;
     use std::signer;
     friend coin_flip::coin_flip;
@@ -84,11 +84,11 @@ module coin_flip::package_manager {
     }
 
     #[test_only]
-    public fun enable_auids_for_test(aptos_framework: &signer) {
+    public fun enable_auids_for_test(lumio_framework: &signer) {
         use std::features;
 
         let feature = features::get_auids();
-        features::change_feature_flags(aptos_framework, vector[feature], vector[]);
+        features::change_feature_flags(lumio_framework, vector[feature], vector[]);
     }
 
     #[test_only]

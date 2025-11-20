@@ -1,8 +1,8 @@
 # This defines a workflow to build and release a new version of the
-# aptos-indexer-protos crate. In order to trigger it go to the Actions tab of the
-# repo, click "Publish aptos-indexer-protos crate" and then "Run Workflow".
+# lumio-indexer-protos crate. In order to trigger it go to the Actions tab of the
+# repo, click "Publish lumio-indexer-protos crate" and then "Run Workflow".
 
-name: "Publish aptos-indexer-protos for Rust"
+name: "Publish lumio-indexer-protos for Rust"
 
 on:
   workflow_dispatch:
@@ -26,7 +26,7 @@ jobs:
       - name: Get current version
         id: get_current_version
         run: |
-          echo "::set-output name=current_version::$(cargo search aptos-indexer-protos --limit 1 | cut -d' ' -f3)"
+          echo "::set-output name=current_version::$(cargo search lumio-indexer-protos --limit 1 | cut -d' ' -f3)"
 
       # Get the version of the crate in the repo
       - name: Get repo version

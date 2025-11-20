@@ -1,5 +1,5 @@
 use ahash::AHashMap;
-use aptos_indexer_testing_framework::sdk_test_context::SdkTestContext;
+use lumio_indexer_testing_framework::sdk_test_context::SdkTestContext;
 use sdk_processor::{
     config::{
         db_config::{DbConfig, PostgresConfig},
@@ -64,7 +64,7 @@ mod tests {
             DEFAULT_OUTPUT_FOLDER,
         },
     };
-    use aptos_indexer_test_transactions::json_transactions::generated_transactions::{
+    use lumio_indexer_test_transactions::json_transactions::generated_transactions::{
         IMPORTED_MAINNET_TXNS_118489_PROPOSAL_VOTE,
         IMPORTED_MAINNET_TXNS_121508544_STAKE_DISTRIBUTE,
         IMPORTED_MAINNET_TXNS_139449359_STAKE_REACTIVATE,
@@ -72,7 +72,7 @@ mod tests {
         IMPORTED_MAINNET_TXNS_1831971037_STAKE_DELEGATION_POOL,
         IMPORTED_MAINNET_TXNS_4827964_STAKE_INITIALIZE,
     };
-    use aptos_indexer_testing_framework::{cli_parser::get_test_config, database::TestDatabase};
+    use lumio_indexer_testing_framework::{cli_parser::get_test_config, database::TestDatabase};
     use sdk_processor::processors::stake_processor::StakeProcessor;
 
     /**

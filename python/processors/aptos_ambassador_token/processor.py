@@ -3,9 +3,9 @@ import grpc
 import ast
 import json
 
-from aptos_protos.aptos.indexer.v1 import raw_data_pb2_grpc
-from aptos_protos.aptos.indexer.v1 import raw_data_pb2
-from aptos_protos.aptos.transaction.v1 import transaction_pb2
+from lumio_protos.lumio.indexer.v1 import raw_data_pb2_grpc
+from lumio_protos.lumio.indexer.v1 import raw_data_pb2
+from lumio_protos.lumio.transaction.v1 import transaction_pb2
 from utils.processor_name import ProcessorName
 from utils.config import Config
 from utils.general_utils import standardize_address

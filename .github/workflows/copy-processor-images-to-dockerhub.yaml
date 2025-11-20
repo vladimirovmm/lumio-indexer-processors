@@ -9,7 +9,7 @@ on:
       version_tag:
         required: false
         type: string
-        description: After we copy the image from GAR to DockerHub, we will add this tag to the image. For example aptos-indexer-processors-v1.0.4.
+        description: After we copy the image from GAR to DockerHub, we will add this tag to the image. For example lumio-indexer-processors-v1.0.4.
       GIT_SHA:
         required: true
         type: string

@@ -5,7 +5,7 @@
 #![allow(clippy::extra_unused_lifetimes)]
 
 use ahash::AHashMap;
-use aptos_indexer_processor_sdk::utils::{convert::remove_null_bytes, errors::ProcessorError};
+use lumio_indexer_processor_sdk::utils::{convert::remove_null_bytes, errors::ProcessorError};
 use diesel::{
     query_builder::{AstPass, Query, QueryFragment, QueryId},
     ConnectionResult, QueryResult,

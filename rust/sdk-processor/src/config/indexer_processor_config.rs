@@ -26,11 +26,11 @@ use crate::{
     },
 };
 use anyhow::Result;
-use aptos_indexer_processor_sdk::{
-    aptos_indexer_transaction_stream::TransactionStreamConfig,
+use lumio_indexer_processor_sdk::{
+    lumio_indexer_transaction_stream::TransactionStreamConfig,
     traits::processor_trait::ProcessorTrait,
 };
-use aptos_indexer_processor_sdk_server_framework::RunnableConfig;
+use lumio_indexer_processor_sdk_server_framework::RunnableConfig;
 use serde::{Deserialize, Serialize};
 
 pub const QUERY_DEFAULT_RETRIES: u32 = 5;

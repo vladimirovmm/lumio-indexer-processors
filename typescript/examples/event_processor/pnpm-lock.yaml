@@ -55,7 +55,7 @@ packages:
     resolution: {integrity: sha512-z/ZCghZDt4Y4l56EToL28mhbr22uAx2nGid7mYDo7N/zeJ4hB9G7tpMjZEqZCSg6pbfSx53tYBMIrdBbON/QdA==}
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@aptos-labs/aptos-protos': 1.1.2
+      '@aptos-labs/lumio-protos': 1.1.2
       '@grpc/grpc-js': 1.9.2
       google-protobuf: 3.21.2
       pg-connection-string: 2.6.2
@@ -83,7 +83,7 @@ packages:
       - typeorm-aurora-data-api-driver
     dev: false
 
-  /@aptos-labs/aptos-protos@1.1.2:
+  /@aptos-labs/lumio-protos@1.1.2:
     resolution: {integrity: sha512-DwOefasA9R9fY7KaPvVNETEeYwwruzsOfNBGlUZNzeeiJW6i79GNLPgoxL0sk6BlnuWqPkHzhRryq+IrSaJsaQ==}
     engines: {node: '>=14.0.0'}
     dependencies:

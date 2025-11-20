@@ -2,7 +2,7 @@ name: Copy images to dockerhub on release
 on:
   push:
     tags:
-      - aptos-indexer-processors-v*
+      - lumio-indexer-processors-v*
 
 permissions:
   contents: read

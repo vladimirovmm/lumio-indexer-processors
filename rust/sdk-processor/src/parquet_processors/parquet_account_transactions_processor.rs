@@ -22,8 +22,8 @@ use crate::{
     },
 };
 use anyhow::Context;
-use aptos_indexer_processor_sdk::{
-    aptos_indexer_transaction_stream::{TransactionStream, TransactionStreamConfig},
+use lumio_indexer_processor_sdk::{
+    lumio_indexer_transaction_stream::{TransactionStream, TransactionStreamConfig},
     builder::ProcessorBuilder,
     common_steps::{TransactionStreamStep, DEFAULT_UPDATE_PROCESSOR_STATUS_SECS},
     traits::{processor_trait::ProcessorTrait, IntoRunnableStep},

@@ -6,6 +6,9 @@ use crate::{
     db::postgres::models::property_map::{PropertyMap, TokenObjectPropertyMap},
     utils::counters::PROCESSOR_UNKNOWN_TYPE_COUNT,
 };
+use bigdecimal::{BigDecimal, Signed, ToPrimitive, Zero};
+use chrono::NaiveDateTime;
+use lazy_static::lazy_static;
 use lumio_protos::{
     transaction::v1::{
         multisig_transaction_payload::Payload as MultisigPayloadType,
@@ -15,9 +18,6 @@ use lumio_protos::{
     },
     util::timestamp::Timestamp,
 };
-use bigdecimal::{BigDecimal, Signed, ToPrimitive, Zero};
-use chrono::NaiveDateTime;
-use lazy_static::lazy_static;
 use serde::{Deserialize, Deserializer, Serialize};
 use serde_json::Value;
 use sha2::Digest;
@@ -29,16 +29,16 @@ pub const MAX_TIMESTAMP_SECS: i64 = 253_402_300_799;
 // Max length of entry function id string to ensure that db doesn't explode
 pub const MAX_ENTRY_FUNCTION_LENGTH: usize = 1000;
 
-pub const APTOS_COIN_TYPE_STR: &str = "0x1::lumio_coin::LumioCoin";
+pub const LUMIO_COIN_TYPE_STR: &str = "0x1::lumio_coin::LumioCoin";
 
 lazy_static! {
-    pub static ref APT_METADATA_ADDRESS_RAW: [u8; 32] = {
+    pub static ref LUM_METADATA_ADDRESS_RAW: [u8; 32] = {
         let mut addr = [0u8; 32];
         addr[31] = 10u8;
         addr
     };
-    pub static ref APT_METADATA_ADDRESS_HEX: String =
-        format!("0x{}", hex::encode(*APT_METADATA_ADDRESS_RAW));
+    pub static ref LUM_METADATA_ADDRESS_HEX: String =
+        format!("0x{}", hex::encode(*LUM_METADATA_ADDRESS_RAW));
 }
 
 pub struct DbConnectionConfig<'a> {

@@ -10,12 +10,12 @@ coin_flip = "_"
 deployer = "0x2b9b1704c56ae52555383c2d0bd16bedacb761bbda67dc63f9d234ab79399c95"
 coin_flip = "0x33cf54b3cb66c618d7eb830e79d2d01a57112bc87b86d87d60630b7a0a5ad4a6"
 
-[dependencies.AptosFramework]
-git = "https://github.com/aptos-labs/aptos-core.git"
+[dependencies.LumioFramework]
+git = "ssh://git@github.com/pontem-network/lumio-node.git"
 rev = "devnet"
-subdir = "aptos-move/framework/aptos-framework"
+subdir = "lumio-move/framework/lumio-framework"
 
-[dependencies.AptosTokenObjects]
-git = "https://github.com/aptos-labs/aptos-core.git"
+[dependencies.LumioTokenObjects]
+git = "ssh://git@github.com/pontem-network/lumio-node.git"
 rev = "devnet"
-subdir = "aptos-move/framework/aptos-token-objects"
+subdir = "lumio-move/framework/lumio-token-objects"

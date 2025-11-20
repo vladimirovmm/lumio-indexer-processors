@@ -1,11 +1,11 @@
 {
   "name": "scripts",
-  "description": "Scripts for aptos-indexer-processors",
+  "description": "Scripts for lumio-indexer-processors",
   "version": "1.0.0",
   "packageManager": "pnpm@8.6.2",
   "main": "index.js",
   "scripts": {
-      "release-processor-images": "./release-processor-images.mjs"
+    "release-processor-images": "./release-processor-images.mjs"
   },
   "keywords": [],
   "author": "",

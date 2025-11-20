@@ -142,7 +142,7 @@ checksum = "34ac096ce696dc2fcabef30516bb13c0a68a11d30131d3df6f04711467681b04"
 [[package]]
 name = "aptos-profiler"
 version = "0.1.0"
-source = "git+https://github.com/aptos-labs/aptos-core.git?rev=202bdccff2b2d333a385ae86a4fcf23e89da9f62#202bdccff2b2d333a385ae86a4fcf23e89da9f62"
+source = "git+ssh://git@github.com/pontem-network/lumio-node.git?rev=202bdccff2b2d333a385ae86a4fcf23e89da9f62#202bdccff2b2d333a385ae86a4fcf23e89da9f62"
 dependencies = [
  "anyhow",
  "backtrace",
@@ -153,9 +153,9 @@ dependencies = [
 ]
 
 [[package]]
-name = "aptos-system-utils"
+name = "lumio-system-utils"
 version = "0.1.0"
-source = "git+https://github.com/aptos-labs/aptos-core.git?rev=202bdccff2b2d333a385ae86a4fcf23e89da9f62#202bdccff2b2d333a385ae86a4fcf23e89da9f62"
+source = "git+ssh://git@github.com/pontem-network/lumio-node.git?rev=202bdccff2b2d333a385ae86a4fcf23e89da9f62#202bdccff2b2d333a385ae86a4fcf23e89da9f62"
 dependencies = [
  "anyhow",
  "aptos-profiler",
@@ -3298,7 +3298,7 @@ name = "server-framework"
 version = "1.0.0"
 dependencies = [
  "anyhow",
- "aptos-system-utils",
+ "lumio-system-utils",
  "async-trait",
  "backtrace",
  "clap",

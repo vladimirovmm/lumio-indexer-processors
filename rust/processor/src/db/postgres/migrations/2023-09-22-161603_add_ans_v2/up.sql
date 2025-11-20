@@ -76,8 +76,8 @@ CREATE INDEX IF NOT EXISTS apn_v2_name_index on ans_primary_name_v2 (domain, sub
 CREATE INDEX IF NOT EXISTS apn_v2_ra_index on ans_primary_name_v2 (registered_address);
 CREATE INDEX IF NOT EXISTS apn_v2_insat_index on ans_primary_name_v2 (inserted_at);
 
-DROP VIEW IF EXISTS current_aptos_names;
-CREATE OR REPLACE VIEW current_aptos_names AS 
+DROP VIEW IF EXISTS current_lumio_names;
+CREATE OR REPLACE VIEW current_lumio_names AS 
 SELECT 
     cal.domain,
 	cal.subdomain,
@@ -89,7 +89,7 @@ SELECT
 	capn.last_transaction_version) as last_transaction_version,
 	coalesce(not capn.is_deleted,
 	false) as is_primary,
-	concat(cal.domain, '.apt') as domain_with_suffix,
+	concat(cal.domain, '.lum') as domain_with_suffix,
 	c.owner_address as owner_address,
 	cal.expiration_timestamp >= CURRENT_TIMESTAMP as is_active
 FROM current_ans_lookup_v2 cal

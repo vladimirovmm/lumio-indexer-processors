@@ -12,8 +12,8 @@ use crate::{
     },
 };
 use anyhow::Context;
-use lumio_protos::transaction::v1::{Event, WriteResource};
 use bigdecimal::BigDecimal;
+use lumio_protos::transaction::v1::{Event, WriteResource};
 use serde::{Deserialize, Serialize};
 
 pub const DOMAIN_LENGTH: usize = 64;
@@ -41,7 +41,7 @@ pub struct OptionalBigDecimal {
 pub fn get_token_name(domain_name: &str, subdomain_name: &str) -> String {
     let domain = truncate_str(domain_name, DOMAIN_LENGTH);
     let subdomain = truncate_str(subdomain_name, DOMAIN_LENGTH);
-    let mut token_name = format!("{}.apt", &domain);
+    let mut token_name = format!("{}.lum", &domain);
     if !subdomain.is_empty() {
         token_name = format!("{}.{}", &subdomain, token_name);
     }

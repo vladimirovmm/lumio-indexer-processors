@@ -24,7 +24,7 @@ jobs:
         id: generate_version
         run: |
           # Get the latest tag that matches our pattern
-          latest_tag=$(git tag -l "aptos-indexer-processors-v*" | sort -V | tail -n 1)
+          latest_tag=$(git tag -l "lumio-indexer-processors-v*" | sort -V | tail -n 1)
           
           if [ -z "$latest_tag" ]; then
             # If no tags exist, start with 1.20.0.
@@ -32,7 +32,7 @@ jobs:
             current_version="1.20.0"
           else
             # Extract version number from tag
-            current_version=$(echo $latest_tag | sed 's/aptos-indexer-processors-v//')
+            current_version=$(echo $latest_tag | sed 's/lumio-indexer-processors-v//')
           fi
           
           # Split version into components
@@ -53,14 +53,14 @@ jobs:
 
       - name: Create and push tag
         run: |
-          new_tag="aptos-indexer-processors-v${{ steps.generate_version.outputs.new_version }}"
+          new_tag="lumio-indexer-processors-v${{ steps.generate_version.outputs.new_version }}"
           git tag -a "$new_tag" -m "Release $new_tag"
           git push origin "$new_tag"
       # TODO: roll docker image release into this workflow.
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: aptos-indexer-processors-v${{ steps.generate_version.outputs.new_version }}
+          tag_name: lumio-indexer-processors-v${{ steps.generate_version.outputs.new_version }}
           name: Release ${{ steps.generate_version.outputs.new_version }}
           body: |
             Automated release from ${{ steps.generate_version.outputs.current_version }} to ${{ steps.generate_version.outputs.new_version }}

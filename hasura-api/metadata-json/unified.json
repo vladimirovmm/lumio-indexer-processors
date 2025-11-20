@@ -125,7 +125,7 @@
             ],
             "array_relationships": [
               {
-                "name": "aptos_names",
+                "name": "lumio_names",
                 "using": {
                   "manual_configuration": {
                     "column_mapping": {
@@ -133,7 +133,7 @@
                     },
                     "insertion_order": null,
                     "remote_table": {
-                      "name": "current_aptos_names",
+                      "name": "current_lumio_names",
                       "schema": "public"
                     }
                   }
@@ -471,7 +471,7 @@
             },
             "object_relationships": [
               {
-                "name": "aptos_name",
+                "name": "lumio_name",
                 "using": {
                   "manual_configuration": {
                     "column_mapping": {
@@ -479,7 +479,7 @@
                     },
                     "insertion_order": null,
                     "remote_table": {
-                      "name": "current_aptos_names",
+                      "name": "current_lumio_names",
                       "schema": "public"
                     }
                   }
@@ -597,7 +597,7 @@
             ],
             "array_relationships": [
               {
-                "name": "aptos_names_owner",
+                "name": "lumio_names_owner",
                 "using": {
                   "manual_configuration": {
                     "column_mapping": {
@@ -605,14 +605,14 @@
                     },
                     "insertion_order": null,
                     "remote_table": {
-                      "name": "current_aptos_names",
+                      "name": "current_lumio_names",
                       "schema": "public"
                     }
                   }
                 }
               },
               {
-                "name": "aptos_names_to",
+                "name": "lumio_names_to",
                 "using": {
                   "manual_configuration": {
                     "column_mapping": {
@@ -620,7 +620,7 @@
                     },
                     "insertion_order": null,
                     "remote_table": {
-                      "name": "current_aptos_names",
+                      "name": "current_lumio_names",
                       "schema": "public"
                     }
                   }
@@ -1105,7 +1105,7 @@
           },
           {
             "table": {
-              "name": "current_aptos_names",
+              "name": "current_lumio_names",
               "schema": "public"
             },
             "object_relationships": [
@@ -1119,7 +1119,7 @@
                     },
                     "insertion_order": null,
                     "remote_table": {
-                      "name": "current_aptos_names",
+                      "name": "current_lumio_names",
                       "schema": "public"
                     }
                   }
@@ -1434,7 +1434,7 @@
             },
             "array_relationships": [
               {
-                "name": "operator_aptos_name",
+                "name": "operator_lumio_name",
                 "using": {
                   "manual_configuration": {
                     "column_mapping": {
@@ -1442,7 +1442,7 @@
                     },
                     "insertion_order": null,
                     "remote_table": {
-                      "name": "current_aptos_names",
+                      "name": "current_lumio_names",
                       "schema": "public"
                     }
                   }
@@ -1496,7 +1496,7 @@
             },
             "object_relationships": [
               {
-                "name": "aptos_name",
+                "name": "lumio_name",
                 "using": {
                   "manual_configuration": {
                     "column_mapping": {
@@ -1504,7 +1504,7 @@
                     },
                     "insertion_order": null,
                     "remote_table": {
-                      "name": "current_aptos_names",
+                      "name": "current_lumio_names",
                       "schema": "public"
                     }
                   }
@@ -1986,7 +1986,7 @@
             ],
             "array_relationships": [
               {
-                "name": "owner_aptos_names",
+                "name": "owner_lumio_names",
                 "using": {
                   "manual_configuration": {
                     "column_mapping": {
@@ -1994,7 +1994,7 @@
                     },
                     "insertion_order": null,
                     "remote_table": {
-                      "name": "current_aptos_names",
+                      "name": "current_lumio_names",
                       "schema": "public"
                     }
                   }
@@ -2257,7 +2257,7 @@
             ],
             "array_relationships": [
               {
-                "name": "aptos_names_from",
+                "name": "lumio_names_from",
                 "using": {
                   "manual_configuration": {
                     "column_mapping": {
@@ -2265,14 +2265,14 @@
                     },
                     "insertion_order": null,
                     "remote_table": {
-                      "name": "current_aptos_names",
+                      "name": "current_lumio_names",
                       "schema": "public"
                     }
                   }
                 }
               },
               {
-                "name": "aptos_names_to",
+                "name": "lumio_names_to",
                 "using": {
                   "manual_configuration": {
                     "column_mapping": {
@@ -2280,7 +2280,7 @@
                     },
                     "insertion_order": null,
                     "remote_table": {
-                      "name": "current_aptos_names",
+                      "name": "current_lumio_names",
                       "schema": "public"
                     }
                   }

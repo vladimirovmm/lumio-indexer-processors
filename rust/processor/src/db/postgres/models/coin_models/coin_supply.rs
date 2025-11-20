@@ -8,17 +8,17 @@
 use crate::{
     db::common::models::default_models::raw_table_items::RawTableItem,
     schema::coin_supply,
-    utils::util::{hash_str, APTOS_COIN_TYPE_STR},
+    utils::util::{hash_str, LUMIO_COIN_TYPE_STR},
 };
 use anyhow::Context;
-use lumio_protos::transaction::v1::WriteTableItem;
 use bigdecimal::BigDecimal;
 use field_count::FieldCount;
+use lumio_protos::transaction::v1::WriteTableItem;
 use serde::{Deserialize, Serialize};
 
-const APTOS_COIN_SUPPLY_TABLE_HANDLE: &str =
+const LUMIO_COIN_SUPPLY_TABLE_HANDLE: &str =
     "0x1b854694ae746cdbd8d44186ca4929b2b337df21d1c74633be19b2710552fdca";
-const APTOS_COIN_SUPPLY_TABLE_KEY: &str =
+const LUMIO_COIN_SUPPLY_TABLE_KEY: &str =
     "0x619dc29a0aac8fa146714058e8dd6d2d0f3bdf5f6331907bf91f3acd81e6935";
 
 #[derive(Clone, Debug, Deserialize, FieldCount, Identifiable, Insertable, Serialize)]
@@ -48,7 +48,7 @@ impl CoinSupply {
                 return Ok(None);
             }
             // Return early if not aggregator table handle
-            if write_table_item.handle.as_str() != APTOS_COIN_SUPPLY_TABLE_HANDLE {
+            if write_table_item.handle.as_str() != LUMIO_COIN_SUPPLY_TABLE_HANDLE {
                 return Ok(None);
             }
 
@@ -63,7 +63,7 @@ impl CoinSupply {
 
             // Return early if not aptos coin aggregator key
             let table_key = table_item_model.decoded_key.as_str().unwrap();
-            if table_key != APTOS_COIN_SUPPLY_TABLE_KEY {
+            if table_key != LUMIO_COIN_SUPPLY_TABLE_KEY {
                 return Ok(None);
             }
             // Everything matches. Get the coin supply
@@ -81,8 +81,8 @@ impl CoinSupply {
                 ))?;
             return Ok(Some(Self {
                 transaction_version: txn_version,
-                coin_type_hash: hash_str(APTOS_COIN_TYPE_STR),
-                coin_type: APTOS_COIN_TYPE_STR.to_string(),
+                coin_type_hash: hash_str(LUMIO_COIN_TYPE_STR),
+                coin_type: LUMIO_COIN_TYPE_STR.to_string(),
                 supply,
                 transaction_timestamp: txn_timestamp,
                 transaction_epoch: txn_epoch,

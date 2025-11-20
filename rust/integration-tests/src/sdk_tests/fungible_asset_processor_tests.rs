@@ -1,5 +1,5 @@
 use ahash::AHashMap;
-use aptos_indexer_testing_framework::sdk_test_context::SdkTestContext;
+use lumio_indexer_testing_framework::sdk_test_context::SdkTestContext;
 use sdk_processor::config::{
     db_config::{DbConfig, PostgresConfig},
     indexer_processor_config::{IndexerProcessorConfig, ProcessorMode, TestingConfig},
@@ -56,7 +56,7 @@ mod sdk_fungible_asset_processor_tests {
             validate_json, DEFAULT_OUTPUT_FOLDER,
         },
     };
-    use aptos_indexer_test_transactions::json_transactions::generated_transactions::{
+    use lumio_indexer_test_transactions::json_transactions::generated_transactions::{
         IMPORTED_DEVNET_TXNS_78753811_COIN_TRANSFER_WITH_V2_EVENTS,
         IMPORTED_MAINNET_TXNS_1680592683_FA_MIGRATION_COIN_INFO,
         IMPORTED_MAINNET_TXNS_1737056775_COIN_TRANSFER_BURN_EVENT,
@@ -75,7 +75,7 @@ mod sdk_fungible_asset_processor_tests {
         IMPORTED_TESTNET_TXNS_5979639459_COIN_REGISTER,
         IMPORTED_TESTNET_TXNS_5992795934_FA_ACTIVITIES, IMPORTED_TESTNET_TXNS_646928741_NO_EVENTS,
     };
-    use aptos_indexer_testing_framework::{
+    use lumio_indexer_testing_framework::{
         cli_parser::get_test_config,
         database::{PostgresTestDatabase, TestDatabase},
         sdk_test_context::SdkTestContext,

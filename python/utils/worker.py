@@ -2,8 +2,8 @@ import argparse
 import grpc
 import json
 
-from aptos_protos.aptos.indexer.v1 import raw_data_pb2, raw_data_pb2_grpc
-from aptos_protos.aptos.transaction.v1 import transaction_pb2
+from lumio_protos.lumio.indexer.v1 import raw_data_pb2, raw_data_pb2_grpc
+from lumio_protos.lumio.transaction.v1 import transaction_pb2
 from utils.config import Config, NFTMarketplaceV2Config
 from utils.models.general_models import Base
 from utils.session import Session
@@ -25,7 +25,7 @@ from processors.example_event_processor.processor import ExampleEventProcessor
 from processors.nft_orderbooks.nft_marketplace_processor import NFTMarketplaceProcesser
 from processors.nft_marketplace_v2.processor import NFTMarketplaceV2Processor
 from processors.coin_flip.processor import CoinFlipProcessor
-from processors.aptos_ambassador_token.processor import AptosAmbassadorTokenProcessor
+from processors.lumio_ambassador_token.processor import AptosAmbassadorTokenProcessor
 import asyncio
 import logging
 import queue
@@ -64,7 +64,7 @@ def get_grpc_stream(
 
     metadata = (
         ("authorization", "Bearer " + indexer_grpc_data_stream_api_key),
-        ("x-aptos-request-name", processor_name),
+        ("x-lumio-request-name", processor_name),
     )
     options = [
         ("grpc.max_receive_message_length", -1),

@@ -1,5 +1,5 @@
 use ahash::AHashMap;
-use aptos_indexer_testing_framework::sdk_test_context::SdkTestContext;
+use lumio_indexer_testing_framework::sdk_test_context::SdkTestContext;
 use sdk_processor::config::{
     db_config::{DbConfig, PostgresConfig},
     indexer_processor_config::{IndexerProcessorConfig, ProcessorMode, TestingConfig},
@@ -55,8 +55,8 @@ mod tests {
             setup_test_environment, validate_json, DEFAULT_OUTPUT_FOLDER,
         },
     };
-    use aptos_indexer_processor_sdk::traits::processor_trait::ProcessorTrait;
-    use aptos_indexer_test_transactions::json_transactions::generated_transactions::{
+    use lumio_indexer_processor_sdk::traits::processor_trait::ProcessorTrait;
+    use lumio_indexer_test_transactions::json_transactions::generated_transactions::{
         IMPORTED_DEVNET_TXNS_78753811_COIN_TRANSFER_WITH_V2_EVENTS,
         IMPORTED_DEVNET_TXNS_78753831_TOKEN_V1_MINT_TRANSFER_WITH_V2_EVENTS,
         IMPORTED_DEVNET_TXNS_78753832_TOKEN_V2_MINT_TRANSFER_WITH_V2_EVENTS,
@@ -68,7 +68,7 @@ mod tests {
         IMPORTED_TESTNET_TXNS_5979639459_COIN_REGISTER,
         IMPORTED_TESTNET_TXNS_5992795934_FA_ACTIVITIES,
     };
-    use aptos_indexer_testing_framework::{cli_parser::get_test_config, database::TestDatabase};
+    use lumio_indexer_testing_framework::{cli_parser::get_test_config, database::TestDatabase};
     use lumio_protos::transaction::v1::Transaction;
     use sdk_processor::processors::events_processor::EventsProcessor;
 

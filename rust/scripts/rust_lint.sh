@@ -12,7 +12,7 @@
 # Make sure we're in the root of the repo.
 if [ ! -f "scripts/rust_lint.sh" ] 
 then
-    echo "Please run this from the aptos-indexer-processors/rust/ directory." 
+    echo "Please run this from the lumio-indexer-processors/rust/ directory." 
     exit 1
 fi
 

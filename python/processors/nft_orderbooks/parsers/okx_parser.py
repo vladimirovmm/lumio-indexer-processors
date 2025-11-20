@@ -1,4 +1,4 @@
-from aptos_protos.aptos.transaction.v1 import transaction_pb2
+from lumio_protos.lumio.transaction.v1 import transaction_pb2
 import json
 import re
 from typing import Dict, List, Optional, TypedDict
@@ -50,7 +50,7 @@ def parse_marketplace_events(
         # Readable transaction event type
         display_event_type = event.type_str.replace(
             "0x1e6009ce9d288f3d5031c06ca0b19a334214ead798a0cb38808485bd6d997a43::", ""
-        ).replace("<0x1::aptos_coin::AptosCoin>", "")
+        ).replace("<0x1::lumio_coin::LumioCoin>", "")
         if display_event_type not in OKX_MARKETPLACE_EVENT_TYPES:
             continue
 

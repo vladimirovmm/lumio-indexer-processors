@@ -20,7 +20,7 @@ typing-extensions = ">=4"
 tz = ["python-dateutil"]
 
 [[package]]
-name = "aptos-protos"
+name = "lumio-protos"
 version = "1.1.2"
 description = "Code generated from protobuf definitions for the Aptos tech stack"
 optional = false
@@ -35,7 +35,7 @@ protobuf = "^4.24.2"
 
 [package.source]
 type = "git"
-url = "https://github.com/aptos-labs/aptos-core.git"
+url = "ssh://git@github.com/pontem-network/lumio-node.git"
 reference = "aee306923da1fae533a91b4015e0a58443742d45"
 resolved_reference = "aee306923da1fae533a91b4015e0a58443742d45"
 subdirectory = "protos/python"

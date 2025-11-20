@@ -5,22 +5,22 @@ version = '1.0.0'
 [addresses]
 test_addr = "_"
 
-[dependencies.AptosFramework]
-git = 'https://github.com/aptos-labs/aptos-core.git'
+[dependencies.LumioFramework]
+git = 'ssh://git@github.com/pontem-network/lumio-node.git'
 rev = 'mainnet'
-subdir = 'aptos-move/framework/aptos-framework'
+subdir = 'lumio-move/framework/lumio-framework'
 
-[dependencies.AptosTokenObjects]
-git = 'https://github.com/aptos-labs/aptos-core.git'
+[dependencies.LumioTokenObjects]
+git = 'ssh://git@github.com/pontem-network/lumio-node.git'
 rev = 'mainnet'
-subdir = 'aptos-move/framework/aptos-token-objects'
+subdir = 'lumio-move/framework/lumio-token-objects'
 
 [dependencies.MoveStdlib]
-git = 'https://github.com/aptos-labs/aptos-core.git'
+git = 'ssh://git@github.com/pontem-network/lumio-node.git'
 rev = 'mainnet'
-subdir = 'aptos-move/framework/move-stdlib'
+subdir = 'lumio-move/framework/move-stdlib'
 
-[dependencies.AptosToken]
-git = 'https://github.com/aptos-labs/aptos-core.git'
+[dependencies.LumioToken]
+git = 'ssh://git@github.com/pontem-network/lumio-node.git'
 rev = 'mainnet'
-subdir = 'aptos-move/framework/aptos-token'
+subdir = 'lumio-move/framework/lumio-token'

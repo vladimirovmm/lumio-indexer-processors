@@ -18,7 +18,7 @@ export class EventProcessor extends TransactionsProcessor {
     endVersion,
     dataSource,
   }: {
-    transactions: protos.aptos.transaction.v1.Transaction[];
+    transactions: protos.lumio.transaction.v1.Transaction[];
     startVersion: bigint;
     endVersion: bigint;
     dataSource: DataSource; // DB connection
@@ -30,7 +30,7 @@ export class EventProcessor extends TransactionsProcessor {
       // Filter out all transactions that are not User Transactions
       if (
         transaction.type !=
-        protos.aptos.transaction.v1.Transaction_TransactionType
+        protos.lumio.transaction.v1.Transaction_TransactionType
           .TRANSACTION_TYPE_USER
       ) {
         continue;

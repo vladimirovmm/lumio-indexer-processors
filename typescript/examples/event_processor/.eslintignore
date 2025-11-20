@@ -1,4 +1,4 @@
-aptos-indexer-protos
+lumio-indexer-protos
 node_modules
 packages/**/node_modules/
 dist/**

@@ -1,5 +1,5 @@
-DROP VIEW IF EXISTS current_aptos_names;
-CREATE OR REPLACE VIEW current_aptos_names AS
+DROP VIEW IF EXISTS current_lumio_names;
+CREATE OR REPLACE VIEW current_lumio_names AS
 SELECT
 	current_ans_lookup.domain,
 	current_ans_lookup.subdomain,

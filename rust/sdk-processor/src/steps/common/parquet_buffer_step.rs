@@ -5,7 +5,7 @@ use crate::{
     steps::common::gcs_uploader::{GCSUploader, Uploadable},
 };
 use anyhow::Result;
-use aptos_indexer_processor_sdk::{
+use lumio_indexer_processor_sdk::{
     traits::{
         pollable_async_step::PollableAsyncRunType, NamedStep, PollableAsyncStep, Processable,
     },
@@ -297,7 +297,7 @@ mod tests {
             parquet_buffer_step::{ParquetBufferStep, ParquetTypeEnum, ParquetTypeStructs},
         },
     };
-    use aptos_indexer_processor_sdk::{
+    use lumio_indexer_processor_sdk::{
         traits::Processable,
         types::transaction_context::{TransactionContext, TransactionMetadata},
     };

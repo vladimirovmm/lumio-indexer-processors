@@ -1,4 +1,4 @@
-from aptos_protos.aptos.transaction.v1.transaction_pb2 import Event
+from lumio_protos.lumio.transaction.v1.transaction_pb2 import Event
 
 
 def get_account_address(event: Event) -> str:

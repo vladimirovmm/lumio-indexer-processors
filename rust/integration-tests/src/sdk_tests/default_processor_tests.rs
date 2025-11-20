@@ -1,5 +1,5 @@
 use ahash::AHashMap;
-use aptos_indexer_testing_framework::sdk_test_context::SdkTestContext;
+use lumio_indexer_testing_framework::sdk_test_context::SdkTestContext;
 use sdk_processor::config::{
     db_config::{DbConfig, PostgresConfig},
     indexer_processor_config::{IndexerProcessorConfig, ProcessorMode, TestingConfig},
@@ -56,13 +56,13 @@ mod tests {
             setup_test_environment, validate_json, DEFAULT_OUTPUT_FOLDER,
         },
     };
-    use aptos_indexer_test_transactions::json_transactions::generated_transactions::{
+    use lumio_indexer_test_transactions::json_transactions::generated_transactions::{
         IMPORTED_MAINNET_TXNS_155112189_DEFAULT_TABLE_ITEMS,
         IMPORTED_MAINNET_TXNS_1845035942_DEFAULT_CURRENT_TABLE_ITEMS,
         IMPORTED_MAINNET_TXNS_423176063_ACCOUNT_TRANSACTION_DELETE,
         IMPORTED_MAINNET_TXNS_513424821_DEFAULT_BLOCK_METADATA_TRANSACTIONS,
     };
-    use aptos_indexer_testing_framework::{cli_parser::get_test_config, database::TestDatabase};
+    use lumio_indexer_testing_framework::{cli_parser::get_test_config, database::TestDatabase};
     use sdk_processor::processors::default_processor::DefaultProcessor;
 
     #[tokio::test(flavor = "multi_thread", worker_threads = 2)]

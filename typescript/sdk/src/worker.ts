@@ -1,4 +1,4 @@
-import { aptos } from "@aptos-labs/aptos-protos";
+import { aptos } from "@aptos-labs/lumio-protos";
 import { Config } from "./config";
 import { Timer } from "timer-node";
 import { exit } from "process";
@@ -72,7 +72,7 @@ export class Worker {
     await this.dataSource.initialize();
 
     // Create the grpc client.
-    const client = new aptos.indexer.v1.RawDataClient(
+    const client = new lumio.indexer.v1.RawDataClient(
       this.config.grpc_data_stream_endpoint,
       ChannelCredentials.createSsl(),
       {
@@ -100,7 +100,7 @@ export class Worker {
       `[Parser] Requesting stream starting from version ${startingVersion}`,
     );
 
-    const request: aptos.indexer.v1.GetTransactionsRequest = {
+    const request: lumio.indexer.v1.GetTransactionsRequest = {
       startingVersion,
     };
 
@@ -119,7 +119,7 @@ export class Worker {
 
     stream.on(
       "data",
-      async (response: aptos.indexer.v1.TransactionsResponse) => {
+      async (response: lumio.indexer.v1.TransactionsResponse) => {
         stream.pause();
         const transactions = response.transactions;
 

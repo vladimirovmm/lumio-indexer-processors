@@ -5,10 +5,10 @@ All notable changes to the Aptos Processer SDK will be captured in this file. Th
 ## Unreleased
 
 ## 0.2.0
-- Use @aptos-labs/aptos-protos instead of @aptos-labs/aptos-indexer-protos.
+- Use @aptos-labs/lumio-protos instead of @aptos-labs/lumio-indexer-protos.
 
 ## 0.1.2
-- Bumped @aptos-labs/aptos-protos to 0.2.3.
+- Bumped @aptos-labs/lumio-protos to 0.2.3.
 
 ## 0.1.1
 - Initial release.

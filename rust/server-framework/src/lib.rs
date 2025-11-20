@@ -1,10 +1,10 @@
 // Copyright © Aptos Foundation
 
 use anyhow::{Context, Result};
-#[cfg(target_os = "linux")]
-use aptos_system_utils::profiling::start_cpu_profiling;
 use backtrace::Backtrace;
 use clap::Parser;
+#[cfg(target_os = "linux")]
+use lumio_system_utils::profiling::start_cpu_profiling;
 use prometheus::{Encoder, TextEncoder};
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
 #[cfg(target_os = "linux")]

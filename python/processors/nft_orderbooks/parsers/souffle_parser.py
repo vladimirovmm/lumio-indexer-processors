@@ -1,4 +1,4 @@
-from aptos_protos.aptos.transaction.v1 import transaction_pb2
+from lumio_protos.lumio.transaction.v1 import transaction_pb2
 import json
 from typing import List
 from processors.nft_orderbooks.nft_marketplace_constants import (
@@ -40,7 +40,7 @@ def parse_event(
 
     # Readable transaction event type
     display_event_type = event_utils.get_event_type_short(event)
-    display_event_type = display_event_type.replace("<0x1::aptos_coin::AptosCoin>", "")
+    display_event_type = display_event_type.replace("<0x1::lumio_coin::LumioCoin>", "")
 
     if display_event_type not in SOUFFLE_MARKETPLACE_EVENT_TYPES:
         return []

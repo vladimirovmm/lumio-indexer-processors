@@ -1,6 +1,6 @@
 use crate::parquet_processors::{ParquetTypeEnum, ParquetTypeStructs, ParquetTypeTrait};
 use anyhow::Context;
-use aptos_indexer_processor_sdk::utils::errors::ProcessorError;
+use lumio_indexer_processor_sdk::utils::errors::ProcessorError;
 use async_trait::async_trait;
 use google_cloud_storage::client::Client as GCSClient;
 use parquet::{

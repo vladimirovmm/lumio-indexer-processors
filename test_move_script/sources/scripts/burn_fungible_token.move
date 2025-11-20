@@ -2,9 +2,9 @@ script {
     use std::signer;
     use std::string::utf8;
 
-    use aptos_framework::fungible_asset::{Metadata};
-    use aptos_framework::object::{Self};
-    use aptos_token_objects::token;
+    use lumio_framework::fungible_asset::{Metadata};
+    use lumio_framework::object::{Self};
+    use lumio_token_objects::token;
     use test_addr::managed_fungible_asset::{Self};
 
     const FT: vector<u8> = b"FT2";

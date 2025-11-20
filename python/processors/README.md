@@ -23,7 +23,7 @@ This processor is part of a full Aptos project, so you can see the processor in 
 
 ## Aptos Ambassador Token
 
-This example demonstrates how to track changes on the attribute (e.g., ambassador level) of the [Aptos ambassador token](https://github.com/aptos-labs/aptos-core/tree/main/aptos-move/move-examples/token_objects/ambassador/move). This example includes
+This example demonstrates how to track changes on the attribute (e.g., ambassador level) of the [Aptos ambassador token](https://github.com/aptos-labs/aptos-core/tree/main/lumio-move/move-examples/token_objects/ambassador/move). This example includes
 
 - Processor: Processes transactions and detects changes on the ambassador level in the events & writesets of the transactions
 - Database: No database operation is demonstrated for the simplicity sake. The changes found are simply printed out in the console.
@@ -32,6 +32,6 @@ When an existing token's level changes, the smart contract is programmed to emit
 
 To run:
 ```
-$ cd aptos-indexer-processors/python
-$ poetry run python -m processors.aptos_ambassador_token.processor -c config.yaml
+$ cd lumio-indexer-processors/python
+$ poetry run python -m processors.lumio_ambassador_token.processor -c config.yaml
 ```

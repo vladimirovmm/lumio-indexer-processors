@@ -262,10 +262,10 @@ mod tests {
         utils::database::{new_db_pool, run_migrations},
     };
     use ahash::AHashMap;
-    use aptos_indexer_processor_sdk::aptos_indexer_transaction_stream::{
+    use lumio_indexer_processor_sdk::lumio_indexer_transaction_stream::{
         utils::AdditionalHeaders, TransactionStreamConfig,
     };
-    use aptos_indexer_testing_framework::database::{PostgresTestDatabase, TestDatabase};
+    use lumio_indexer_testing_framework::database::{PostgresTestDatabase, TestDatabase};
     use diesel_async::RunQueryDsl;
     use processor::schema::processor_status;
     use std::collections::HashSet;

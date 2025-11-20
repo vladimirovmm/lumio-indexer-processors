@@ -4,7 +4,7 @@ use crate::{
 };
 use ahash::AHashMap;
 use anyhow::Result;
-use aptos_indexer_processor_sdk::{
+use lumio_indexer_processor_sdk::{
     traits::{AsyncRunType, AsyncStep, NamedStep, Processable},
     types::transaction_context::TransactionContext,
     utils::errors::ProcessorError,

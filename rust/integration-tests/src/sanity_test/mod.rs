@@ -1,8 +1,8 @@
 mod sanity_tests;
 
 use crate::sdk_tests::run_processor_test;
-use aptos_indexer_testing_framework::sdk_test_context::SdkTestContext;
 use diesel::PgConnection;
+use lumio_indexer_testing_framework::sdk_test_context::SdkTestContext;
 use sdk_processor::processors::{
     account_transactions_processor::AccountTransactionsProcessor, ans_processor::AnsProcessor,
     default_processor::DefaultProcessor, events_processor::EventsProcessor,

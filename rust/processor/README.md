@@ -1,6 +1,6 @@
 # Aptos Core Processors (DEPRECATED)
 
-The processors in this crate are deprecated. The new processors are in [`sdk-processor`](https://github.com/aptos-labs/aptos-indexer-processors/tree/main/rust/sdk-processor) and you should follow the guide there. 
+The processors in this crate are deprecated. The new processors are in [`sdk-processor`](https://github.com/aptos-labs/lumio-indexer-processors/tree/main/rust/sdk-processor) and you should follow the guide there. 
 
 ## How to run these processors 
 
@@ -68,7 +68,7 @@ transactions are splitted into tasks and inserted with random order.
 
 ### Use a custom parser
 
-- Check our [indexer processors](https://github.com/aptos-labs/aptos-indexer-processors)!
+- Check our [indexer processors](https://github.com/aptos-labs/lumio-indexer-processors)!
 
 ### Manually running diesel-cli
 - `cd` into the database folder you use under `src/db/` (e.g. `src/db/postgres`), then run it.

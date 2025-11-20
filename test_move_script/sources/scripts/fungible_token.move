@@ -3,10 +3,10 @@ script {
     use std::string::utf8;
     use std::option;
 
-    use aptos_framework::fungible_asset::{Metadata};
-    use aptos_framework::object::object_from_constructor_ref;
-    use aptos_token_objects::collection;
-    use aptos_token_objects::token;
+    use lumio_framework::fungible_asset::{Metadata};
+    use lumio_framework::object::object_from_constructor_ref;
+    use lumio_token_objects::collection;
+    use lumio_token_objects::token;
     use test_addr::managed_fungible_asset::{Self};
 
     const FT: vector<u8> = b"FT2";

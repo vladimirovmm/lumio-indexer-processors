@@ -1,7 +1,7 @@
 #!/usr/bin/env -S node
 
 
-// This script releases indexer processor images to docker hub https://github.com/aptos-labs/aptos-indexer-processors.
+// This script releases indexer processor images to docker hub https://github.com/aptos-labs/lumio-indexer-processors.
 // It does so by copying the images from aptos GCP artifact registry to docker hub.
 
 // Usually it's run in CI, but you can also run it locally in emergency situations, assuming you have the right credentials.
@@ -83,15 +83,15 @@ if (process.env.CI === "true") {
 }
 
 function getImage(language) {
-    const sourceImage = `indexer-client-examples/${language}`;
-    const targetImage = `indexer-processor-${language}`;
-    return {sourceImage, targetImage};
+  const sourceImage = `indexer-client-examples/${language}`;
+  const targetImage = `indexer-processor-${language}`;
+  return { sourceImage, targetImage };
 }
 
 const GCP_DOCKER_ARTIFACT_REPO = parsedArgs.GCP_DOCKER_ARTIFACT_REPO;
 const DOCKERHUB = "docker.io/aptoslabs";
 
-const {sourceImage, targetImage} = getImage(parsedArgs.LANGUAGE);
+const { sourceImage, targetImage } = getImage(parsedArgs.LANGUAGE);
 console.info(chalk.yellow(`INFO: Target image: ${targetImage}`));
 
 const imageSource = `${GCP_DOCKER_ARTIFACT_REPO}/${sourceImage}:${parsedArgs.GIT_SHA}`;
@@ -106,10 +106,10 @@ await $`${crane} copy ${imageSource} ${imageGitShaTarget}`;
 console.info(chalk.green(`INFO: Tagging image as latest`));
 await $`${crane} tag ${imageGitShaTarget} latest`;
 
-if(parsedArgs.VERSION_TAG !== null) {
-    console.info(chalk.green(`INFO: Tagging image as ${parsedArgs.VERSION_TAG} and ${parsedArgs.VERSION_TAG}_${parsedArgs.GIT_SHA}`));
-    await $`${crane} tag ${imageGitShaTarget} ${parsedArgs.VERSION_TAG}`; // just the version tag
-    await $`${crane} tag ${imageGitShaTarget} ${parsedArgs.VERSION_TAG}_${parsedArgs.GIT_SHA}`; // version tag with git sha
+if (parsedArgs.VERSION_TAG !== null) {
+  console.info(chalk.green(`INFO: Tagging image as ${parsedArgs.VERSION_TAG} and ${parsedArgs.VERSION_TAG}_${parsedArgs.GIT_SHA}`));
+  await $`${crane} tag ${imageGitShaTarget} ${parsedArgs.VERSION_TAG}`; // just the version tag
+  await $`${crane} tag ${imageGitShaTarget} ${parsedArgs.VERSION_TAG}_${parsedArgs.GIT_SHA}`; // version tag with git sha
 }
 
 async function waitForImageToBecomeAvailable(imageToWaitFor, waitForImageSeconds) {

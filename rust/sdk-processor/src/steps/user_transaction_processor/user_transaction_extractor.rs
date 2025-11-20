@@ -1,4 +1,4 @@
-use aptos_indexer_processor_sdk::{
+use lumio_indexer_processor_sdk::{
     lumio_protos::transaction::v1::Transaction,
     traits::{async_step::AsyncRunType, AsyncStep, NamedStep, Processable},
     types::transaction_context::TransactionContext,

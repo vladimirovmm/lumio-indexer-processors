@@ -1,15 +1,15 @@
 script {
     use std::signer;
     use std::string::{Self, utf8};
-    use aptos_std::string_utils;
+    use lumio_std::string_utils;
     use std::vector;
     use std::option;
 
-    use aptos_framework::coin::{Self, Coin};
-    use aptos_framework::object::{Self, ConstructorRef, Object};
-    use aptos_token_objects::collection::{Self, Collection};
-    use aptos_token_objects::token;
-    use aptos_token_objects::property_map;
+    use lumio_framework::coin::{Self, Coin};
+    use lumio_framework::object::{Self, ConstructorRef, Object};
+    use lumio_token_objects::collection::{Self, Collection};
+    use lumio_token_objects::token;
+    use lumio_token_objects::property_map;
 
     const S: vector<u8> = b"TEST2";
 

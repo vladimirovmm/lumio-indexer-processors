@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@aptos-labs/aptos-protos':
+  '@aptos-labs/lumio-protos':
     specifier: 1.1.2
     version: 1.1.2
   '@grpc/grpc-js':
@@ -63,7 +63,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@aptos-labs/aptos-protos@1.1.2:
+  /@aptos-labs/lumio-protos@1.1.2:
     resolution: {integrity: sha512-DwOefasA9R9fY7KaPvVNETEeYwwruzsOfNBGlUZNzeeiJW6i79GNLPgoxL0sk6BlnuWqPkHzhRryq+IrSaJsaQ==}
     engines: {node: '>=14.0.0'}
     dependencies:

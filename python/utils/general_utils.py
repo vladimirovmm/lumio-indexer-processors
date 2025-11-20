@@ -1,7 +1,7 @@
 import datetime
 import hashlib
 
-from aptos_protos.aptos.util.timestamp import timestamp_pb2
+from lumio_protos.lumio.util.timestamp import timestamp_pb2
 
 
 def hash(s: str) -> str:

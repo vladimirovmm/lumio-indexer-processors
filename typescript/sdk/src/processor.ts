@@ -1,4 +1,4 @@
-import { aptos } from "@aptos-labs/aptos-protos";
+import { aptos } from "@aptos-labs/lumio-protos";
 import { DataSource } from "typeorm";
 
 /**

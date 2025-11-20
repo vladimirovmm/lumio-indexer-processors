@@ -14,7 +14,7 @@ use crate::{
     },
 };
 use anyhow::Result;
-use aptos_indexer_processor_sdk::{
+use lumio_indexer_processor_sdk::{
     common_steps::ProcessorStatusSaver,
     types::transaction_context::TransactionContext,
     utils::{errors::ProcessorError, time::parse_timestamp},

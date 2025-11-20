@@ -7,7 +7,7 @@
     "token_standard": "v1",
     "registered_address": null,
     "expiration_timestamp": "2023-10-18T16:54:32",
-    "token_name": "god.apt",
+    "token_name": "god.lum",
     "is_deleted": false,
     "subdomain_expiration_policy": null
   },
@@ -19,7 +19,7 @@
     "token_standard": "v1",
     "registered_address": null,
     "expiration_timestamp": "2023-10-18T16:54:32",
-    "token_name": "max.apt",
+    "token_name": "max.lum",
     "is_deleted": false,
     "subdomain_expiration_policy": null
   },
@@ -31,7 +31,7 @@
     "token_standard": "v1",
     "registered_address": null,
     "expiration_timestamp": "2023-10-18T16:54:32",
-    "token_name": "asha.apt",
+    "token_name": "asha.lum",
     "is_deleted": false,
     "subdomain_expiration_policy": null
   },
@@ -43,7 +43,7 @@
     "token_standard": "v1",
     "registered_address": null,
     "expiration_timestamp": "2023-10-18T16:54:32",
-    "token_name": "chris.apt",
+    "token_name": "chris.lum",
     "is_deleted": false,
     "subdomain_expiration_policy": null
   },
@@ -55,7 +55,7 @@
     "token_standard": "v1",
     "registered_address": null,
     "expiration_timestamp": "2023-10-18T16:54:32",
-    "token_name": "david.apt",
+    "token_name": "david.lum",
     "is_deleted": false,
     "subdomain_expiration_policy": null
   },
@@ -67,7 +67,7 @@
     "token_standard": "v1",
     "registered_address": null,
     "expiration_timestamp": "2023-10-18T16:54:32",
-    "token_name": "maayan.apt",
+    "token_name": "maayan.lum",
     "is_deleted": false,
     "subdomain_expiration_policy": null
   }

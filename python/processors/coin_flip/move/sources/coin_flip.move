@@ -1,8 +1,8 @@
 module coin_flip::coin_flip {
-    use aptos_framework::object::{Self, Object, DeleteRef};
-    use aptos_framework::timestamp;
-    use aptos_framework::account;
-    use aptos_framework::transaction_context;
+    use lumio_framework::object::{Self, Object, DeleteRef};
+    use lumio_framework::timestamp;
+    use lumio_framework::account;
+    use lumio_framework::transaction_context;
     use std::event::{Self, EventHandle};
     use std::signer;
     use std::error;
@@ -12,7 +12,7 @@ module coin_flip::coin_flip {
     /// The contract should never be able to reach this state.
     const EINVALID_CONTRACT_STATE: u64 = 0;
 
-    #[resource_group_member(group = aptos_framework::object::ObjectGroup)]
+    #[resource_group_member(group = lumio_framework::object::ObjectGroup)]
     /// A resource stored at an object that tracks a user's coin flip stats
     /// It also handles the event emission of each flip.
     struct CoinFlipStats has key {
@@ -116,7 +116,7 @@ module coin_flip::coin_flip {
         let obj_signer = object::generate_signer(&constructor_ref);
 
         // object needs to have an Account resource so it can create an event handle successfully
-        aptos_framework::aptos_account::create_account(signer::address_of(&obj_signer));
+        lumio_framework::lumio_account::create_account(signer::address_of(&obj_signer));
         move_to(
             &obj_signer,
             CoinFlipStats {
@@ -131,14 +131,14 @@ module coin_flip::coin_flip {
         stats_object
     }
 
-    #[test(deployer = @deployer, resource_signer = @coin_flip, aptos_framework = @0x1)]
+    #[test(deployer = @deployer, resource_signer = @coin_flip, lumio_framework = @0x1)]
     fun test(
         deployer: &signer,
         resource_signer: &signer,
-        aptos_framework: &signer,
+        lumio_framework: &signer,
     ) acquires CoinFlipStats {
-        timestamp::set_time_has_started_for_testing(aptos_framework);
-        package_manager::enable_auids_for_test(aptos_framework);
+        timestamp::set_time_has_started_for_testing(lumio_framework);
+        package_manager::enable_auids_for_test(lumio_framework);
         package_manager::init_for_test(deployer, resource_signer);
 
         flip_many(deployer, vector<bool> [true, false, true, false, true, false, true, false, true, false]);

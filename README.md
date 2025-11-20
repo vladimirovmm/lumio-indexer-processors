@@ -2,11 +2,11 @@
 > 
 > Latest development is no longer done in this repo.
 > 
-> - [aptos-indexer-processors-v2](https://github.com/aptos-labs/aptos-indexer-processors-v2) for processors
-> - [aptos-indexer-processor-sdk](https://github.com/aptos-labs/aptos-indexer-processor-sdk) for processor-sdk
+> - [lumio-indexer-processors-v2](https://github.com/aptos-labs/lumio-indexer-processors-v2) for processors
+> - [lumio-indexer-processor-sdk](https://github.com/aptos-labs/lumio-indexer-processor-sdk) for processor-sdk
 
 
-[![codecov](https://codecov.io/gh/aptos-labs/aptos-indexer-processors/graph/badge.svg?token=yOKOnndthm)](https://codecov.io/gh/aptos-labs/aptos-indexer-processors)
+[![codecov](https://codecov.io/gh/aptos-labs/lumio-indexer-processors/graph/badge.svg?token=yOKOnndthm)](https://codecov.io/gh/aptos-labs/lumio-indexer-processors)
 
 
 # Aptos Core Processors

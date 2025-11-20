@@ -16,7 +16,7 @@ edition = "2021"
 homepage = "https://aptoslabs.com"
 license = "Apache-2.0"
 publish = false
-repository = "https://github.com/aptos-labs/aptos-indexer-processors"
+repository = "https://github.com/aptos-labs/lumio-indexer-processors"
 rust-version = "1.78"
 
 [workspace.dependencies]
@@ -27,13 +27,11 @@ integration-tests = { path = "integration-tests" }
 sdk-processor = { path = "sdk-processor" }
 
 lumio-protos = { git = "ssh://git@github.com/pontem-network/lumio-node.git" }
+lumio-indexer-processor-sdk = { git = "https://github.com/vladimirovmm/lumio-indexer-processor-sdk.git" }
 
 async-trait = "0.1.53"
 ahash = { version = "0.8.7", features = ["serde"] }
 anyhow = "1.0.86"
-# aptos-indexer-processor-sdk = { git = "https://github.com/vladimirovmm/lumio-indexer-processor-sdk.git", branch = "lumio" }
-aptos-indexer-processor-sdk = { git = "https://github.com/aptos-labs/aptos-indexer-processor-sdk.git", rev = "b79ed8b5864b2a12a1f9c5fd01579462e029b2ae" }
-
 backtrace = "0.3.58"
 base64 = "0.13.0"
 bb8 = "0.8.1"
@@ -45,7 +43,7 @@ clap = { version = "4.3.5", features = ["derive", "unstable-styles"] }
 const_format = "0.2.33"
 # Do NOT enable the postgres feature here, it is conditionally enabled in a feature
 # block in the Cargo.toml file for the processor crate.
-# https://github.com/aptos-labs/aptos-indexer-processors/pull/325
+# https://github.com/aptos-labs/lumio-indexer-processors/pull/325
 diesel = { version = "2.1", features = [
     "chrono",
     "postgres_backend",

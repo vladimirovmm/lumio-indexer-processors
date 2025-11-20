@@ -24,13 +24,13 @@ mod tests {
             token_v2_processor_tests::setup_token_v2_processor_config,
         },
     };
-    use aptos_indexer_test_transactions::json_transactions::generated_transactions::{
+    use diesel::pg::PgConnection;
+    use lumio_indexer_test_transactions::json_transactions::generated_transactions::{
         ALL_IMPORTED_MAINNET_TXNS, ALL_IMPORTED_TESTNET_TXNS, ALL_SCRIPTED_TRANSACTIONS,
     };
-    use aptos_indexer_testing_framework::{
+    use lumio_indexer_testing_framework::{
         cli_parser::get_test_config, database::TestDatabase, sdk_test_context::SdkTestContext,
     };
-    use diesel::pg::PgConnection;
     use sdk_processor::processors::{
         account_transactions_processor::AccountTransactionsProcessor, ans_processor::AnsProcessor,
         default_processor::DefaultProcessor, events_processor::EventsProcessor,

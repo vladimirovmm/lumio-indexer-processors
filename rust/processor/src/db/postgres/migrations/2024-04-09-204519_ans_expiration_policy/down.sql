@@ -1,6 +1,6 @@
 -- This file should undo anything in `up.sql`
-DROP VIEW IF EXISTS current_aptos_names;
-CREATE OR REPLACE VIEW current_aptos_names AS
+DROP VIEW IF EXISTS current_lumio_names;
+CREATE OR REPLACE VIEW current_lumio_names AS
 SELECT cal.domain,
   cal.subdomain,
   cal.token_name,
@@ -12,7 +12,7 @@ SELECT cal.domain,
     capn.last_transaction_version
   ) as last_transaction_version,
   coalesce(not capn.is_deleted, false) as is_primary,
-  concat(cal.domain, '.apt') as domain_with_suffix,
+  concat(cal.domain, '.lum') as domain_with_suffix,
   c.owner_address as owner_address,
   cal.expiration_timestamp >= CURRENT_TIMESTAMP as is_active
 FROM current_ans_lookup_v2 cal
